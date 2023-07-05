@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system">        
+        
+        <!-- Line -->
+        <text name="gamecc_sidebar_line" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0.11</pos>
+            <size>1 0.0005</size>
+            <backgroundColor >FFFFFF10</backgroundColor>
+            <zIndex>98</zIndex>   
+        </text>
+
+        <!-- Menu left -->
+        <image name="gamecc_logo" extra="true">
+            <origin>0 0</origin>
+            <pos>0.04 0.047</pos>
+            <size>0.025 0</size>
+            <path>./../_assets/gamecc_color.webp</path>
+            <opacity>0.6</opacity>
+            <zIndex>98</zIndex>   
+        </image>
+
+        <!-- Indicadores de sistema hardware -->
+        <text name="gamecc_top_arcade, gamecc_top_computer, gamecc_top_console, gamecc_top_port, gamecc_top_portable" extra="true">
+            <origin>0 0</origin>
+            <size>0.06 0.025</size>
+            <fontPath>./_assets/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>FFFFFF50</color>
+            <alignment>center</alignment>
+            <zIndex>98</zIndex>
+        </text>
+        <text name="gamecc_top_arcade_line, gamecc_top_computer_line, gamecc_top_console_line, gamecc_top_port_line, gamecc_top_portable_line" extra="true">
+            <origin>0 0</origin>
+            <size>0.06 0.0020</size>
+            <backgroundColor>FFFFFF00</backgroundColor>
+            <zIndex>99</zIndex>   
+        </text>
+
+        <text name="gamecc_top_arcade" extra="true">
+            <pos>0.09 0.059</pos>
+            <text>ARCADE</text>
+            <color if="${system.hardwareType} == 'arcade'">FFFFFF</color>
+        </text>
+        <text name="gamecc_top_computer" extra="true">
+            <pos>0.15 0.059</pos>
+            <text>COMPUTER</text>
+            <color if="${system.hardwareType} == 'computer'">FFFFFF</color>
+        </text>
+        <text name="gamecc_top_console" extra="true">
+            <pos>0.21 0.059</pos>
+            <text>CONSOLE</text>
+            <color if="${system.hardwareType} == 'console'">FFFFFF</color>
+        </text>
+        <text name="gamecc_top_port" extra="true">
+            <pos>0.27 0.059</pos>
+            <text>PORT</text>
+            <color if="${system.hardwareType} == 'port'">FFFFFF</color>
+        </text>
+        <text name="gamecc_top_portable" extra="true">
+            <pos>0.33 0.059</pos>
+            <text>PORTABLE</text>
+            <color if="${system.hardwareType} == 'portable'">FFFFFF</color>
+        </text>
+
+        <text name="gamecc_top_arcade_line" extra="true">
+            <pos>0.09 0.11</pos>
+            <backgroundColor if="${system.hardwareType} == 'arcade'">${pinkColor}</backgroundColor>
+        </text>
+        <text name="gamecc_top_computer_line" extra="true">
+            <pos>0.15 0.11</pos>
+            <backgroundColor if="${system.hardwareType} == 'computer'">${pinkColor}</backgroundColor>
+        </text>
+        <text name="gamecc_top_console_line" extra="true">
+            <pos>0.21 0.11</pos>
+            <backgroundColor if="${system.hardwareType} == 'console'">${pinkColor}</backgroundColor>
+        </text>
+        <text name="gamecc_top_port_line" extra="true">
+            <pos>0.27 0.11</pos>
+            <backgroundColor if="${system.hardwareType} == 'port'">${pinkColor}</backgroundColor>
+        </text>
+        <text name="gamecc_top_portable_line" extra="true">
+            <pos>0.33 0.11</pos>
+            <backgroundColor if="${system.hardwareType} == 'portable'">${pinkColor}</backgroundColor>
+        </text>
+
+        <!-- menu right -->
+        <image name="gamecc_logo_complete" extra="true">
+            <origin>1 0</origin>
+            <pos>0.988 0.054</pos>
+            <size>0.1 0</size>
+            <path>./../_assets/gamecc_logo.webp</path>
+            <opacity>0.6</opacity>
+            <zIndex>98</zIndex>
+        </image>
+
+        <image name="gamecc_grid_icon" extra="true">
+            <origin>1 0</origin>
+            <pos>0.87 0.06</pos>
+            <size>0.012 0</size>
+            <path>./_assets/icons/grid.webp</path>
+            <opacity>0.6</opacity>
+            <zIndex>98</zIndex>
+        </image>
+
+        <text name="gamecc_system_fullName" extra="true">
+            <origin>1 0</origin>
+            <pos>0.84 0.059</pos>
+            <size>0.3 0.025</size>
+            <text>${system.fullName}</text>
+            <fontPath>./_assets/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>FFFFFF</color>
+            <alignment>right</alignment>
+            <zIndex>99</zIndex>
+        </text>
+
+    </view>
+
+</theme>

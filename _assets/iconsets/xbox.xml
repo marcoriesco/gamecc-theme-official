@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, gamecarousel">
+		<helpsystem name="help">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.970</pos>
+			<fontPath>./../_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<textColor>FFFFFFFF</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./xbox/updown.webp</iconUpDown>
+			<iconLeftRight>./xbox/leftright.webp</iconLeftRight>
+			<iconUpDownLeftRight>./xbox/all.webp</iconUpDownLeftRight>
+			<iconA>./xbox/a.webp</iconA>
+			<iconB>./xbox/b.webp</iconB>
+			<iconX>./xbox/x.webp</iconX>
+			<iconY>./xbox/y.webp</iconY>
+			<iconL>./xbox/l.webp</iconL>
+			<iconR>./xbox/r.webp</iconR>
+			<iconStart>./xbox/start.webp</iconStart>
+			<iconSelect>./xbox/select.webp</iconSelect>
+		</helpsystem>		
+	</view>
+	
+</theme>

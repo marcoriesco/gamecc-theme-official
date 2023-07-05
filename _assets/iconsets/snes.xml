@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, gamecarousel">
+		<helpsystem name="help">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.970</pos>
+			<fontPath>./../_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<textColor>FFFFFFFF</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./snes/updown.webp</iconUpDown>
+			<iconLeftRight>./snes/leftright.webp</iconLeftRight>
+			<iconUpDownLeftRight>./snes/all.webp</iconUpDownLeftRight>
+			<iconA>./snes/a.webp</iconA>
+			<iconB>./snes/b.webp</iconB>
+			<iconX>./snes/x.webp</iconX>
+			<iconY>./snes/y.webp</iconY>
+			<iconL>./snes/l.webp</iconL>
+			<iconR>./snes/r.webp</iconR>
+			<iconStart>./snes/start.webp</iconStart>
+			<iconSelect>./snes/select.webp</iconSelect>
+		</helpsystem>		
+	</view>
+	
+</theme>

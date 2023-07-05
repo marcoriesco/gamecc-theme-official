@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="grid" tinyScreen="false">
+
+        <imagegrid name="gamegrid">
+            <origin>0 0</origin>
+            <pos>0.05 0.65</pos>
+            <size>0.95 0.29</size>
+            <margin>0 0</margin>
+            <padding>0.02 0.03 0.0 0.03</padding>
+
+            <!-- Jogos com covers padrão : 10 1 -->
+            <autoLayout>10 1</autoLayout>
+            
+            <!-- Jogos com covers quadrados ou retagulares : 8 1 -->
+            <autoLayout if="
+                ${system.name} == 'dreamcast' || 
+                ${system.name} == 'n64dd' || 
+                ${system.name} == '3ds' || 
+                ${system.name} == 'virtualboy' || 
+                ${system.name} == 'nds' || 
+                ${system.name} == 'gb' || 
+                ${system.name} == 'gbc' || 
+                ${system.name} == 'gba' || 
+                ${system.name} == 'snes' || 
+                ${system.name} == 'snesbr' || 
+                ${system.name} == 'snes-msu' || 
+                ${system.name} == 'snes-msu1' || 
+                ${system.name} == 'n64' || 
+                ${system.name} == 'ngage' || 
+                ${system.name} == 'pokemini' || 
+                ${system.name} == 'pcengine' || 
+                ${system.name} == 'pcenginecd' || 
+                ${system.name} == 'psx' || 
+                ${system.name} == 'psp'
+            ">8 1</autoLayout>
+
+            <!-- Jogos com covers mais longos : 12 1 -->
+            <autoLayout if="
+                ${system.name} == '3do' || 
+                ${system.name} == 'switch' || 
+                ${system.name} == 'psp' || 
+                ${system.name} == 'pspminis'
+            ">12 1</autoLayout>
+            
+            <autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
+            <scrollLoop>1</scrollLoop>
+            <scrollbarColor>${pinkColor}</scrollbarColor>
+            <scrollbarCorner>1</scrollbarCorner>
+            <scrollbarSize>0.002</scrollbarSize>
+            <scrollDirection>horizontal</scrollDirection>
+            <animateSelection>0</animateSelection>
+            <zIndex>99</zIndex>
+        </imagegrid>
+
+        <gridtile name="default">
+            <padding>5 5 5 5</padding>
+            <imageColor>FFFFFF50</imageColor>
+            <backgroundCornerSize>0 0</backgroundCornerSize>
+            <backgroundColor>0</backgroundColor>
+            <selectionMode>image</selectionMode>
+            <imageSizeMode>maxSize</imageSizeMode>
+        </gridtile>
+
+        <gridtile name="selected">
+            <backgroundEdgeColor>${pinkColor}</backgroundEdgeColor>
+            <backgroundCornerSize>0 0</backgroundCornerSize>
+            <imageColor>FFFFFF</imageColor>
+		</gridtile>
+
+        <text name="gridtile">
+            <color>FFFFFF</color>
+            <backgroundColor>00000000</backgroundColor>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.016</fontSize>
+            <alignment>center</alignment>
+            <size>1 0</size>
+        </text>
+      
+		<image name="gridtile.favorite">
+			<origin>0.5 0.5</origin>
+			<pos>0.95 0.05</pos>
+			<path>./_assets/favorite.webp</path>
+			<maxSize>0.10 0.10</maxSize>
+			<horizontalAlignment>right</horizontalAlignment>
+		</image>
+
+		<image name="gridtile.favorite:selected">
+			<color>ffffff</color>
+		</image>
+
+        <!-- Overlay background -->
+        <image name="overlay, overlay2" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_assets/overlay_gamelist.webp</path>
+            <zIndex>16</zIndex>
+        </image>
+
+        <!-- Background Default -->
+        <image name="background_default" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./../_assets/default.webp</path>
+            <path>./../$system/assets/wall.webp</path>
+            <zIndex>1</zIndex>
+        </image>
+
+        <!-- Fanart background -->
+        <image name="md_fanart">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>14</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+
+        </image>
+
+        <!-- Video background -->
+        <video ifSubset="video_gamelist:Ativo" name="md_video">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <delay>3</delay>
+            <zIndex>15</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+
+        </video>
+
+        <!-- System Icon -->
+        <image name="system_controller_icon" extra="true">
+            <origin>0 0.5</origin>
+            <pos>0.015 0.07</pos>
+            <size>0.025 </size>
+            <path>./../_assets/systemicons/default.webp</path>
+            <path>./../_assets/systemicons/$system.webp</path>
+            <opacity>0.9</opacity>
+            <zIndex>99</zIndex>
+        </image>
+
+        <!-- System Name -->
+        <text name="logoText">
+            <origin>0 0.5</origin>
+            <pos>0.05 0.069</pos>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.026</fontSize>
+            <color>FFFFFF</color>
+            <alignment>left</alignment>
+            <zIndex>99</zIndex>
+        </text>
+
+        <!-- Game Name -->
+        <text name="md_name">
+            <origin>0 0</origin>
+            <pos>0.05 0.35</pos>
+            <size>1 0</size>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>FFFFFF</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>left</alignment>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+
+        </text>
+
+        <!-- Rating Classificação do Game -->
+        <rating name="md_rating">
+            <origin>0 0</origin>
+            <pos>0.05 0.4</pos>
+            <size>0 0.02</size>
+            <color>FFFFFF</color>
+            <unfilledColor>FFFFFF</unfilledColor>
+            <horizontalAlignment>center</horizontalAlignment>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </rating>
+
+        <!-- Game md_releasedate & md_publisher -->
+        <datetime name="md_releasedate, md_publisher">
+            <origin>0 0</origin>
+            <pos>0.116 0.396</pos>
+            <size>0.05 0</size>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>FFFFFF</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>left</alignment>
+            <format>%Y</format>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </datetime>
+        <text name="md_publisher">
+            <pos>0.15 0.396</pos>
+            <size>0.5 0</size>
+        </text>
+
+        <!-- Game description -->
+        <text name="md_description">
+            <origin>0 0</origin>
+            <pos>0.05 0.45</pos>
+            <size>0.45 0.10</size>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.016</fontSize>
+            <color>FFFFFF95</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>left</alignment>
+            <lineSpacing>1.16</lineSpacing>
+
+            <storyboard event="activate">
+                <animation property="size" from="0.45 0" to="0.45 0.10" duration="600" mode="linear" />
+            </storyboard>
+
+        </text>
+
+        <!-- Game Players icon -->
+        <image name="game_players_icon" extra="true">
+            <origin>0 0</origin>
+            <pos>0.02 0.359</pos>
+            <size>0.020 0</size>
+            <path>./../_assets/systemicons/{game:players}p.webp</path>
+            <opacity>0.9</opacity>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </image>
+
+        <!-- <text name="game_players_iconText" extra="true">
+            <origin>0 0</origin>
+            <pos>0.02 0.3</pos>
+            <size>0.020 0</size>
+            <text>{game:players}</text>
+            <fontSize>0.02</fontSize>
+            <color>FFFFFF</color>
+            <opacity>0.9</opacity>
+            <zIndex>99</zIndex>
+        </text>    -->
+
+        <!-- Informações do sistema - HIDE -->
+        <image name="art, art2, art3" extra="true">
+            <zIndex>0</zIndex>
+        </image>
+
+    </view>
+
+</theme>

@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, gamecarousel">
+		<helpsystem name="help">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.970</pos>
+			<fontPath>./../_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<textColor>FFFFFFFF</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./psx/updown.webp</iconUpDown>
+			<iconLeftRight>./psx/leftright.webp</iconLeftRight>
+			<iconUpDownLeftRight>./psx/all.webp</iconUpDownLeftRight>
+			<iconA>./psx/a.webp</iconA>
+			<iconB>./psx/b.webp</iconB>
+			<iconX>./psx/x.webp</iconX>
+			<iconY>./psx/y.webp</iconY>
+			<iconL>./psx/l.webp</iconL>
+			<iconR>./psx/r.webp</iconR>
+			<iconStart>./psx/start.webp</iconStart>
+			<iconSelect>./psx/select.webp</iconSelect>
+		</helpsystem>		
+	</view>
+	
+</theme>

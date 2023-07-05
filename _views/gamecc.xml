@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system">
+        <carousel name="systemcarousel">
+            <type>horizontal</type>
+            <pos>0.05 0.62</pos>
+            <size>0.9 0.3</size>
+            <logoScale>1</logoScale>
+            <logoSize>0.3333333 0.22</logoSize>
+            <logoAlignment>center</logoAlignment>
+            <logoPos>0.29 0</logoPos>
+            <color>00000000</color>
+            <maxLogoCount>3</maxLogoCount>
+            <defaultTransition>instant</defaultTransition>
+            <zIndex>45</zIndex>
+        </carousel>
+
+        <text name="logoText">
+            <color>FFFFFFFF</color>
+            <glowColor>00000050</glowColor>
+            <glowSize>3</glowSize>
+            <glowOffset>3</glowOffset>
+            <lineSpacing>1.0</lineSpacing>
+            <fontPath>./_assets/fonts/RobotoCondensed-Bold.ttf</fontPath>
+            <fontSize>0.032</fontSize>
+        </text>
+
+        <image name="logo">
+            <path>./../_assets/logos/$system.webp</path>
+            <linearSmooth>true</linearSmooth>
+
+            <storyboard event="activate" repeatAt="1">
+                <animation property="opacity" to="1" begin="0" duration="0" mode="linear"/>
+                <animation property="scale" from="0.70" to="1.10" begin="0" duration="0" mode="linear"/>
+            </storyboard>
+
+            <storyboard event="scroll">
+                <animation property="opacity" from="0" to="0.3" duration="0" mode="Linear"/>
+                <animation property="scale" from="1.10" to="0.60" begin="0" duration="0" mode="easeOut"/>
+            </storyboard>
+        </image>
+
+        <image name="art" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <linearSmooth>true</linearSmooth>
+            <path>./_assets/arts/$system.webp</path>
+            <zIndex>40</zIndex>
+        </image>
+
+        <!-- Overlay background -->
+        <image name="overlay, overlay2" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_assets/overlay_gamelist.webp</path>
+            <zIndex>41</zIndex>
+        </image>
+
+        <!-- Número de Games -->
+        <text name="systemInfo">
+            <alignment>right</alignment>
+            <pos>-0.025 0.94</pos>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.022</fontSize>
+            <color>ffffff</color>
+            <zIndex>95</zIndex>
+        </text>
+
+        <!-- Indicadores de sistema hardware -->
+        <text name="gamecc_arcade, gamecc_computer, gamecc_console, gamecc_port, gamecc_portable" extra="true">
+            <origin>0 0</origin>
+            <pos>0.5 0.85</pos>
+            <size>0.05 0</size>
+            <fontPath>./_assets/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>FFFFFF50</color>
+            <zIndex>98</zIndex>
+        </text>
+        <text name="gamecc_arcade" extra="true">
+            <pos>0.36 0.85</pos>
+            <text>ARCADE</text>
+            <color if="${system.hardwareType} == 'arcade'">FFFFFF</color>
+        </text>
+        <text name="gamecc_computer" extra="true">
+            <pos>0.412 0.85</pos>
+            <text>COMPUTER</text>
+            <color if="${system.hardwareType} == 'computer'">FFFFFF</color>
+        </text>
+        <text name="gamecc_console" extra="true">
+            <pos>0.48 0.85</pos>
+            <text>CONSOLE</text>
+            <color if="${system.hardwareType} == 'console'">FFFFFF</color>
+        </text>
+        <text name="gamecc_port" extra="true">
+            <pos>0.54 0.85</pos>
+            <text>PORT</text>
+            <color if="${system.hardwareType} == 'port'">FFFFFF</color>
+        </text>
+        <text name="gamecc_portable" extra="true">
+            <pos>0.58 0.85</pos>
+            <text>PORTABLE</text>
+            <color if="${system.hardwareType} == 'portable'">FFFFFF</color>
+        </text>
+        
+        <!-- Indicadores de controle -->
+        <image name="gamecc_controls_l" extra="true">
+            <origin>0 0</origin>
+            <pos>0.32 0.847</pos>
+            <size>0.025 0</size>
+            <path>./_assets/iconsets/gamecc/l.webp</path>
+            <zIndex>99</zIndex>
+        </image>
+        <image name="gamecc_controls_r" extra="true">
+            <origin>0 0</origin>
+            <pos>0.64 0.847</pos>
+            <size>0.025 0</size>
+            <path>./../_assets/iconsets/gamecc/r.webp</path>
+            <zIndex>99</zIndex>
+        </image>
+
+        <!-- Informações do sistema - HIDE -->
+        <text name="info1, info2, info3, info4, info5" extra="true">
+            <zIndex>0</zIndex>
+            <visible>0</visible>
+        </text>
+        <!-- não alterar -->
+    </view>
+
+    <view name="screen">
+        <!-- controllerActivity -->
+        <controllerActivity name="controllerActivity">
+            <origin>0 0</origin>
+            <pos>0.015 0.950</pos>
+            <size>0.03 0.03</size>
+            <itemSpacing>0.003</itemSpacing>
+            <imagePath>./../_assets/indicators/default.svg</imagePath>
+            <color>FFFFFF80</color>
+            <activityColor>FFFFFF</activityColor>
+            <hotkeyColor>FFA0A0C0</hotkeyColor>
+            <zIndex>50</zIndex>
+        </controllerActivity>
+
+        <!-- Clock -->
+        <text name="clock">
+            <origin>1 0</origin>
+            <pos>0.835 0.0535</pos>
+            <size>0.07 0.025</size>
+            <fontPath>./_assets/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>FFFFFF00</color>
+            <alignment>right</alignment>
+            <zIndex>1</zIndex>
+        </text>
+
+    </view>
+
+</theme>

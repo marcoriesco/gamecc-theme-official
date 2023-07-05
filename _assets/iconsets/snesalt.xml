@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, gamecarousel">
+		<helpsystem name="help">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.970</pos>
+			<fontPath>./../_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<textColor>FFFFFFFF</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./snesalt/updown.webp</iconUpDown>
+			<iconLeftRight>./snesalt/leftright.webp</iconLeftRight>
+			<iconUpDownLeftRight>./snesalt/all.webp</iconUpDownLeftRight>
+			<iconA>./snesalt/a.webp</iconA>
+			<iconB>./snesalt/b.webp</iconB>
+			<iconX>./snesalt/x.webp</iconX>
+			<iconY>./snesalt/y.webp</iconY>
+			<iconL>./snesalt/l.webp</iconL>
+			<iconR>./snesalt/r.webp</iconR>
+			<iconStart>./snesalt/start.webp</iconStart>
+			<iconSelect>./snesalt/select.webp</iconSelect>
+		</helpsystem>		
+	</view>
+	
+</theme>

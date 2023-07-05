@@ -1,0 +1,66 @@
+<!-- 
+    GAMECC theme created by 'Game Clandestino'
+    1.11, Setember 2022 For Batocera/Retrobat
+    -
+    https://gameclandestino.org
+    https://youtube.com/@gameclandestino
+    https://facebook.com/gameclandestino
+    https://discord.gg/cR3T4wkjyQ (Comunidade Clandestina)
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="grid">
+    <formatVersion>7</formatVersion>
+
+    <!-- ICONSETS -->
+    <subset name="iconset" displayName="ICONSETS">
+        <include name="PADRÃO">./_assets/iconsets/default.xml</include>
+        <include name="GAMECC">./_assets/iconsets/gamecc.xml</include>
+        <include name="ARCADE">./_assets/iconsets/arcade.xml</include>
+        <include name="SNES">./_assets/iconsets/snes.xml</include>
+        <include name="SNES ALT">./_assets/iconsets/snesalt.xml</include>
+        <include name="PSX">./_assets/iconsets/psx.xml</include>
+        <include name="PSX ALT">./_assets/iconsets/psx1.xml</include>
+        <include name="XBOX">./_assets/iconsets/xbox.xml</include>
+        <include name="XBOX ONE">./_assets/iconsets/xboxone.xml</include>
+        <include name="NINTENDO SWITCH">./_assets/iconsets/switch.xml</include>
+    </subset>
+
+    <!-- TOPBAR SYSTEM -->
+    <subset name="topbar" displayName="TOPBAR">
+        <include name="Ativo">./_views/topbar.xml</include>
+        <include name="Desativado" />
+    </subset>
+
+    <!-- TOPBAR GAMELIST -->
+    <subset name="topbar_gamelist" displayName="TOPBAR GAMELIST">
+        <include name="Ativo">./_views/topbar_gamelist.xml</include>
+        <include name="Desativado" />
+    </subset>
+
+    <!-- VIDEO GAMELIST -->
+    <subset name="video_gamelist" displayName="VÍDEO GAMELIST">
+        <include name="Ativo" />
+        <include name="Desativado" />
+    </subset>
+
+    <feature supported="carousel">
+        <view name="system">
+            <sound name="bgsound"></sound>
+        </view>
+    </feature>
+
+    <variables>
+        <pinkColor>9f0043</pinkColor>
+        <yellowColor>facc00</yellowColor>
+    </variables>
+
+    <include name="system">./_views/gamecc.xml</include>
+    <include name="menu">./_views/menu.xml</include>
+    <include name="grid">./_views/gamecc_gamelist.xml</include>
+
+    <!-- Specific layout for systems -->
+    <include>./${system.theme}/custom.xml</include>
+
+</theme>

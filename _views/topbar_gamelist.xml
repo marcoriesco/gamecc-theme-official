@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="grid">        
+        
+        <text name="gamecc_sidebar_line" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0.11</pos>
+            <size>1 0.0005</size>
+            <backgroundColor >FFFFFF10</backgroundColor>
+            <zIndex>98</zIndex>   
+        </text>
+
+        <!-- GAMECC logo -->
+        <image name="gamecc_logo" extra="true">
+            <origin>1 0</origin>
+            <pos>0.988 0.054</pos>
+            <size>0.1 0</size>
+            <path>./../_assets/gamecc_logo.webp</path>
+            <opacity>0.6</opacity>
+            <zIndex>21</zIndex>
+        </image>
+
+        <!-- grid icon -->
+        <image name="gamecc_grid_icon" extra="true">
+            <origin>1 0</origin>
+            <pos>0.87 0.06</pos>
+            <size>0.012 0</size>
+            <path>./../_assets/icons/grid.webp</path>
+            <opacity>0.6</opacity>
+            <zIndex>21</zIndex>
+        </image>
+
+        <text name="gamecc_hardware" extra="true">
+            <origin>1 0</origin>
+            <pos>0.84 0.059</pos>
+            <size>0.17 0.025</size>
+            <text>${system.hardwareType}</text>
+            <fontPath>./_assets/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>FFFFFF</color>
+            <alignment>right</alignment>
+            <zIndex>99</zIndex>
+        </text>
+
+    </view>
+
+</theme>
