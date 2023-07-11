@@ -175,7 +175,6 @@
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
             </storyboard>
-
         </text>
 
         <!-- Rating Classificação do Game -->
@@ -232,7 +231,6 @@
             <storyboard event="activate">
                 <animation property="size" from="0.45 0" to="0.45 0.10" duration="600" mode="linear" />
             </storyboard>
-
         </text>
 
         <!-- Game Players icon -->
@@ -259,12 +257,6 @@
             <opacity>0.9</opacity>
             <zIndex>99</zIndex>
         </text>    -->
-
-        <!-- Informações do sistema - HIDE -->
-        <image name="art, art2, art3" extra="true">
-            <zIndex>0</zIndex>
-        </image>
-
     </view>
 
 </theme>

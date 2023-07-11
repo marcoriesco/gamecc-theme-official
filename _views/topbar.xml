@@ -33,37 +33,57 @@
             <alignment>center</alignment>
             <zIndex>98</zIndex>
         </text>
+        
         <text name="gamecc_top_arcade_line, gamecc_top_computer_line, gamecc_top_console_line, gamecc_top_port_line, gamecc_top_portable_line" extra="true">
             <origin>0 0</origin>
             <size>0.06 0.0020</size>
             <backgroundColor>FFFFFF00</backgroundColor>
-            <zIndex>99</zIndex>   
-        </text>
+            <zIndex>99</zIndex>
+
+            <storyboard>
+                <animation property="size" from="0 0.0020" to="0.06 0.0020" duration="300" mode="easeIn" />
+            </storyboard>
+         </text>
 
         <text name="gamecc_top_arcade" extra="true">
             <pos>0.09 0.059</pos>
             <text>ARCADE</text>
-            <color if="${system.hardwareType} == 'arcade'">FFFFFF</color>
+
+            <storyboard if="${system.hardwareType} == 'arcade'">
+                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
+            </storyboard>
         </text>
         <text name="gamecc_top_computer" extra="true">
             <pos>0.15 0.059</pos>
             <text>COMPUTER</text>
-            <color if="${system.hardwareType} == 'computer'">FFFFFF</color>
+
+            <storyboard if="${system.hardwareType} == 'computer'">
+                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
+            </storyboard>
         </text>
         <text name="gamecc_top_console" extra="true">
             <pos>0.21 0.059</pos>
             <text>CONSOLE</text>
-            <color if="${system.hardwareType} == 'console'">FFFFFF</color>
+
+            <storyboard if="${system.hardwareType} == 'console'">
+                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
+            </storyboard>
         </text>
         <text name="gamecc_top_port" extra="true">
             <pos>0.27 0.059</pos>
             <text>PORT</text>
-            <color if="${system.hardwareType} == 'port'">FFFFFF</color>
+
+            <storyboard if="${system.hardwareType} == 'port'">
+                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
+            </storyboard>
         </text>
         <text name="gamecc_top_portable" extra="true">
             <pos>0.33 0.059</pos>
             <text>PORTABLE</text>
-            <color if="${system.hardwareType} == 'portable'">FFFFFF</color>
+
+            <storyboard if="${system.hardwareType} == 'portable'">
+                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
+            </storyboard>
         </text>
 
         <text name="gamecc_top_arcade_line" extra="true">
