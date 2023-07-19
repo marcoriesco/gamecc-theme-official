@@ -15,6 +15,7 @@
             <maxLogoCount>3</maxLogoCount>
             <defaultTransition>instant</defaultTransition>
             <zIndex>45</zIndex>
+            <zIndex>0</zIndex>
         </carousel>
 
         <text name="logoText">
@@ -60,83 +61,166 @@
             <zIndex>41</zIndex>
         </image>
 
+        <!-- Title & Subtitle systems -->
+        <text name="system_title" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0.65</pos>
+            <size>1 0.10</size>
+
+            <text>${system.name}</text>
+            <text if="${system.name} == 'favorites'">FAVORITOS</text>
+            <text if="${system.name} == 'hbmame'">ARCADE HACKS</text>
+            <text if="${system.name} == 'daphne'">LASERDISC</text>
+            <text if="${system.name} == 'model2'">MODEL 2</text>
+            <text if="${system.name} == 'model3'">MODEL 3</text>
+            <text if="${system.name} == 'naomi'">NAOMI</text>
+            <text if="${system.name} == 'naomi2'">NAOMI 2</text>
+            <text if="${system.name} == 'neogeo'">NEO GEO</text>
+
+            <text if="${system.name} == 'windows'">PC GAMER</text>
+
+            <text if="${system.name} == 'neogeoaes'">NEO GEO</text>
+            <text if="${system.name} == 'jaguar'">JAGUAR</text>
+            <text if="${system.name} == 'jaguarcd'">JAGUAR CD</text>
+            <text if="${system.name} == 'n64'">NINTENDO 64</text>
+            <text if="${system.name} == 'n64dd'">NINTENDO 64</text>
+            <text if="${system.name} == 'virtualboy'">VIRTUAL BOY</text>
+            <text if="${system.name} == 'wii'">WII</text>
+            <text if="${system.name} == 'wiiu'">WII U</text>
+            <text if="${system.name} == 'xbox360'">XBOX 360</text>
+            <text if="${system.name} == 'xboxlivearcade'">LIVE ARCADE</text>
+
+            <text if="${system.name} == 'scummvm'">SCUMM VM</text>
+
+            <text if="${system.name} == 'gw'">GAME & WATCH</text>
+            <text if="${system.name} == 'gb'">GAMEBOY</text>
+            <text if="${system.name} == 'gbc'">COLOR</text>
+            <text if="${system.name} == 'gba'">ADVANCED</text>
+            <text if="${system.name} == 'ngp'">POCKET</text>
+            <text if="${system.name} == 'ngpc'">POCKET COLOR</text>
+            <text if="${system.name} == 'ngage'">N-GAGE</text>
+            <text if="${system.name} == 'konamihandheld'">HANDHELD</text>
+            <text if="${system.name} == 'nds'">NINTENDO DS</text>
+            <text if="${system.name} == 'pokemini'">POKÉMON</text>
+            <text if="${system.name} == 'wswan'">WonderSwan</text>
+            <text if="${system.name} == 'wswanc'">WonderSwan</text>
+
+            <text if="${system.name} == 'all'">OS JOGOS</text>
+
+            <fontPath>./_assets/fonts/LEMONMILK-Bold.otf</fontPath>
+            <fontSize>0.12</fontSize>
+            <color>FFFFFF95</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>center</alignment>
+            <lineSpacing>1.16</lineSpacing>
+            <opacity>0</opacity>
+            <zIndex>50</zIndex>
+
+            <storyboard>
+                <animation property="pos" from="0 0.75" to="0 0.65" duration="300" mode="EaseIn" />
+                <animation property="opacity" from="0" to="1" duration="1000" mode="EaseIn" />
+            </storyboard>
+        </text>
+
+        <text name="system_subtitle" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0.55</pos>
+            <size>1 0.10</size>
+
+            <text>${system.hardwareType}</text>
+            <text if="${system.hardwareType} == 'custom collection'">coleção do</text>
+            <text if="${system.name} == 'arcade'"></text>
+            <text if="${system.name} == 'chihiro'">SEGA</text>
+            <text if="${system.name} == 'hbmame'">MAME HOMEBREW</text>
+            <text if="${system.name} == 'daphne'">DAPHNE</text>
+            <text if="${system.name} == 'model2'">SEGA</text>
+            <text if="${system.name} == 'model3'">SEGA</text>
+            <text if="${system.name} == 'naomi'">SEGA</text>
+            <text if="${system.name} == 'naomi2'">SEGA</text>
+            <text if="${system.name} == 'hikaru'">SEGA</text>
+            <text if="${system.name} == 'neogeo'">MVS</text>
+
+            <text if="${system.name} == 'dos'">MICROSOFT</text>
+            <text if="${system.name} == 'windows'">WINDOWS</text>
+
+            <text if="${system.name} == 'neogeoaes'">AES</text>
+            <text if="${system.name} == 'gamecube'">NINTENDO</text>
+            <text if="${system.name} == 'jaguar'">ATARI</text>
+            <text if="${system.name} == 'jaguarcd'">ATARI</text>
+            <text if="${system.name} == 'megadrive'">SEGA</text>
+            <text if="${system.name} == 'n64dd'">DISK</text>
+            <text if="${system.name} == 'virtualboy'">NINTENDO</text>
+            <text if="${system.name} == 'wii'">NINTENDO</text>
+            <text if="${system.name} == 'wiiu'">NINTENDO</text>
+            <text if="${system.name} == 'xbox'">MICROSOFT</text>
+            <text if="${system.name} == 'xbox360'">MICROSOFT</text>
+            <text if="${system.name} == 'xboxlivearcade'">XBOX</text>
+
+            <text if="${system.name} == '3ds'">NINTENDO</text>
+            <text if="${system.name} == 'gamegear'">SEGA</text>
+            <text if="${system.name} == 'gb'">NINTENDO</text>
+            <text if="${system.name} == 'gbc'">GAMEBOY</text>
+            <text if="${system.name} == 'gba'">GAMEBOY</text>
+            <text if="${system.name} == 'ngp'">NEO GEO</text>
+            <text if="${system.name} == 'ngpc'">NEO GEO</text>
+            <text if="${system.name} == 'ngage'">NOKIA</text>
+            <text if="${system.name} == 'konamihandheld'">KONAMI</text>
+            <text if="${system.name} == 'pokemini'">MINI</text>
+            <text if="${system.name} == 'wswan'">BANDAI</text>
+            <text if="${system.name} == 'wswanc'">BANDAI COLOR</text>
+
+            <text if="${system.name} == 'all'">TODOS</text>
+
+            <fontPath>./_assets/fonts/LEMONMILK-Medium.otf</fontPath>
+            <fontSize>0.05</fontSize>
+            <color>FFFFFF70</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>center</alignment>
+            <lineSpacing>1.16</lineSpacing>
+            <opacity>0</opacity>
+            <zIndex>50</zIndex>
+
+            <storyboard>
+                <animation property="pos" from="0 0.65" to="0 0.55" duration="300" mode="EaseIn" />
+                <animation property="opacity" from="0" to="1" duration="1000" mode="EaseIn" />
+            </storyboard>
+        </text>
+
         <!-- Número de Games -->
         <text name="systemInfo">
-            <alignment>right</alignment>
-            <pos>-0.025 0.94</pos>
-            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
-            <fontSize>0.022</fontSize>
-            <color>ffffff</color>
+            <zIndex>0</zIndex>
+        </text>
+
+        <text name="systeminfo_gamecc" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0.76</pos>
+            <size>1 0.10</size>
+            <text>{binding:total} games</text>
+            <fontPath>./_assets/fonts/LEMONMILK-Medium.otf</fontPath>
+            <fontSize>0.036</fontSize>
+            
+            <color>${pinkColor}</color>
+            <color if="${system.name} == 'gamecc'">${gameccColor}</color>
+            <color if="${system.hardwareType} == 'arcade'">${arcadeColor}</color>
+            <color if="${system.hardwareType} == 'computer'">${computerColor}</color>
+            <color if="${system.hardwareType} == 'console'">${consoleColor}</color>
+            <color if="${system.hardwareType} == 'port'">${portColor}</color>
+            <color if="${system.hardwareType} == 'portable'">${portableColor}</color>
+            <color if="${system.name} == 'all'">${allColor}</color>
+            <color if="${system.hardwareType} == 'custom collection'">${collectionColor}</color>
+            
+            <alignment>center</alignment>
+            <systemInfoDelay>0</systemInfoDelay>
             <zIndex>95</zIndex>
-        </text>
 
-        <!-- Indicadores de sistema hardware -->
-        <text name="gamecc_arcade, gamecc_computer, gamecc_console, gamecc_port, gamecc_portable" extra="true">
-            <origin>0 0</origin>
-            <pos>0.5 0.85</pos>
-            <size>0.05 0</size>
-            <fontPath>./_assets/RobotoCondensed-Regular.ttf</fontPath>
-            <fontSize>0.024</fontSize>
-            <color>FFFFFF50</color>
-            <zIndex>98</zIndex>
-        </text>
-        
-        <text name="gamecc_arcade" extra="true">
-            <pos>0.36 0.85</pos>
-            <text>ARCADE</text>
-
-            <storyboard if="${system.hardwareType} == 'arcade'">
-                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
+            <storyboard>
+                <animation property="pos" from="0 0.86" to="0 0.76" duration="250" mode="EaseIn" />
+                <animation property="opacity" from="0" to="1" duration="1000" mode="EaseIn" />
             </storyboard>
         </text>
-        <text name="gamecc_computer" extra="true">
-            <pos>0.412 0.85</pos>
-            <text>COMPUTER</text>
 
-            <storyboard if="${system.hardwareType} == 'computer'">
-                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
-            </storyboard>
-        </text>
-        <text name="gamecc_console" extra="true">
-            <pos>0.48 0.85</pos>
-            <text>CONSOLE</text>
-
-            <storyboard if="${system.hardwareType} == 'console'">
-                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
-            </storyboard>
-        </text>
-        <text name="gamecc_port" extra="true">
-            <pos>0.54 0.85</pos>
-            <text>PORT</text>
-
-            <storyboard if="${system.hardwareType} == 'port'">
-                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
-            </storyboard>
-        </text>
-        <text name="gamecc_portable" extra="true">
-            <pos>0.58 0.85</pos>
-            <text>PORTABLE</text>
-
-            <storyboard if="${system.hardwareType} == 'portable'">
-                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
-            </storyboard>
-        </text>
-        
-        <!-- Indicadores de controle -->
-        <image name="gamecc_controls_l" extra="true">
-            <origin>0 0</origin>
-            <pos>0.32 0.847</pos>
-            <size>0.025 0</size>
-            <path>./_assets/iconsets/gamecc/l.webp</path>
-            <zIndex>99</zIndex>
-        </image>
-        <image name="gamecc_controls_r" extra="true">
-            <origin>0 0</origin>
-            <pos>0.64 0.847</pos>
-            <size>0.025 0</size>
-            <path>./../_assets/iconsets/gamecc/r.webp</path>
-            <zIndex>99</zIndex>
-        </image>
     </view>
 
     <view name="screen">
@@ -146,10 +230,10 @@
             <pos>0.015 0.950</pos>
             <size>0.03 0.03</size>
             <itemSpacing>0.003</itemSpacing>
-            <imagePath>./../_assets/indicators/default.svg</imagePath>
+            <imagePath>./_assets/indicators/default.svg</imagePath>
             <color>FFFFFF80</color>
             <activityColor>FFFFFF</activityColor>
-            <hotkeyColor>FFA0A0C0</hotkeyColor>
+            <hotkeyColor>${pinkColor}</hotkeyColor>
             <zIndex>50</zIndex>
         </controllerActivity>
 
@@ -162,7 +246,6 @@
             <fontSize>0.024</fontSize>
             <color>FFFFFF00</color>
             <alignment>right</alignment>
-            <zIndex>1</zIndex>
         </text>
 
     </view>

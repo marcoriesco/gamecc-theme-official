@@ -13,7 +13,7 @@
             <zIndex>99</zIndex>
         </image>
 
-        <image name="backgroundalt" extra="true">
+        <image name="background_gamesplash" extra="true">
             <origin>0 0</origin>
             <size>1 1</size>
             <path>./_assets/arts/gamesplash.webp</path>

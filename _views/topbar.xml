@@ -4,49 +4,88 @@
 
     <view name="system">        
         
-        <!-- Line -->
-        <text name="gamecc_sidebar_line" extra="true">
-            <origin>0 0</origin>
-            <pos>0 0.11</pos>
-            <size>1 0.0005</size>
-            <backgroundColor >FFFFFF10</backgroundColor>
-            <zIndex>98</zIndex>   
-        </text>
-
-        <!-- Menu left -->
+        <!-- GAMECC -->
         <image name="gamecc_logo" extra="true">
             <origin>0 0</origin>
-            <pos>0.04 0.047</pos>
+            <pos>0.019 0.035</pos>
             <size>0.025 0</size>
             <path>./../_assets/gamecc_color.webp</path>
+            <color if="${system.name} == 'gamecc'">000000</color>
             <opacity>0.6</opacity>
-            <zIndex>98</zIndex>   
+            <opacity if="${system.name} == 'gamecc'">1</opacity>
+            <zIndex>100</zIndex>   
         </image>
+        
 
         <!-- Indicadores de sistema hardware -->
-        <text name="gamecc_top_arcade, gamecc_top_computer, gamecc_top_console, gamecc_top_port, gamecc_top_portable" extra="true">
+        <text name="gamecc_top_gamecc, gamecc_top_arcade, gamecc_top_computer, gamecc_top_console, gamecc_top_port, gamecc_top_portable, gamecc_top_all, gamecc_top_collection" extra="true">
             <origin>0 0</origin>
             <size>0.06 0.025</size>
-            <fontPath>./_assets/RobotoCondensed-Regular.ttf</fontPath>
-            <fontSize>0.020</fontSize>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.018</fontSize>
             <color>FFFFFF50</color>
             <alignment>center</alignment>
-            <zIndex>98</zIndex>
+            <zIndex>99</zIndex>
         </text>
         
-        <text name="gamecc_top_arcade_line, gamecc_top_computer_line, gamecc_top_console_line, gamecc_top_port_line, gamecc_top_portable_line" extra="true">
+        <text name="gamecc_top_indicator_line" extra="true">
             <origin>0 0</origin>
-            <size>0.06 0.0020</size>
-            <backgroundColor>FFFFFF00</backgroundColor>
-            <zIndex>99</zIndex>
+
+            <pos if="${system.name} == 'gamecc'">0 0</pos>
+            <pos if="${system.hardwareType} == 'arcade'">0.06 0</pos>
+            <pos if="${system.hardwareType} == 'computer'">0.12 0</pos>
+            <pos if="${system.hardwareType} == 'console'">0.18 0</pos>
+            <pos if="${system.hardwareType} == 'port'">0.24 0</pos>
+            <pos if="${system.hardwareType} == 'portable'">0.30 0</pos>
+            <pos if="${system.name} == 'all'">0.36 0</pos>
+            <pos if="${system.hardwareType} == 'custom collection'">0.42 0</pos>
+
+            <size>0.06 0.11</size>
+
+            <backgroundColor>${pinkColor}</backgroundColor>
+            <backgroundColor if="${system.name} == 'gamecc'">${gameccColor}</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'arcade'">${arcadeColor}</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'computer'">${computerColor}</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'console'">${consoleColor}</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'port'">${portColor}</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'portable'">${portableColor}</backgroundColor>
+            <backgroundColor if="${system.name} == 'all'">${allColor}</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'custom collection'">${collectionColor}</backgroundColor>
+
+            <zIndex>98</zIndex>
 
             <storyboard>
-                <animation property="size" from="0 0.0020" to="0.06 0.0020" duration="300" mode="easeIn" />
+                <animation property="opacity" from="0" to="1" duration="300" mode="easeIn" />
             </storyboard>
-         </text>
+
+            <!-- <storyboard if="${system.name} == 'gamecc'">
+                <animation property="pos" from="0 0" to="0 0" duration="300" mode="easeIn" />
+            </storyboard>
+            <storyboard if="${system.hardwareType} == 'arcade'">
+                <animation property="pos" from="0 0" to="0.06 0" duration="300" mode="easeIn" />
+            </storyboard>
+            <storyboard if="${system.hardwareType} == 'computer'">
+                <animation property="pos" from="0.06 0" to="0.12 0" duration="300" mode="easeIn" />
+            </storyboard>
+            <storyboard if="${system.hardwareType} == 'console'">
+                <animation property="pos" from="0.12 0" to="0.18 0" duration="300" mode="easeIn" />
+            </storyboard>
+            <storyboard if="${system.hardwareType} == 'port'">
+                <animation property="pos" from="0.18 0" to="0.24 0" duration="300" mode="easeIn" />
+            </storyboard>
+            <storyboard if="${system.hardwareType} == 'portable'">
+                <animation property="pos" from="0.24 0" to="0.30 0" duration="300" mode="easeIn" />
+            </storyboard>
+            <storyboard if="${system.name} == 'all'">
+                <animation property="pos" from="0.30 0" to="0.36 0" duration="300" mode="easeIn" />
+            </storyboard>
+            <storyboard if="${system.hardwareType} == 'custom collection'">
+                <animation property="pos" from="0.36 0" to="0.42 0" duration="300" mode="easeIn" />
+            </storyboard>       -->
+        </text>
 
         <text name="gamecc_top_arcade" extra="true">
-            <pos>0.09 0.059</pos>
+            <pos>0.06 0.045</pos>
             <text>ARCADE</text>
 
             <storyboard if="${system.hardwareType} == 'arcade'">
@@ -54,7 +93,7 @@
             </storyboard>
         </text>
         <text name="gamecc_top_computer" extra="true">
-            <pos>0.15 0.059</pos>
+            <pos>0.12 0.045</pos>
             <text>COMPUTER</text>
 
             <storyboard if="${system.hardwareType} == 'computer'">
@@ -62,7 +101,7 @@
             </storyboard>
         </text>
         <text name="gamecc_top_console" extra="true">
-            <pos>0.21 0.059</pos>
+            <pos>0.18 0.045</pos>
             <text>CONSOLE</text>
 
             <storyboard if="${system.hardwareType} == 'console'">
@@ -70,7 +109,7 @@
             </storyboard>
         </text>
         <text name="gamecc_top_port" extra="true">
-            <pos>0.27 0.059</pos>
+            <pos>0.24 0.045</pos>
             <text>PORT</text>
 
             <storyboard if="${system.hardwareType} == 'port'">
@@ -78,66 +117,40 @@
             </storyboard>
         </text>
         <text name="gamecc_top_portable" extra="true">
-            <pos>0.33 0.059</pos>
+            <pos>0.30 0.045</pos>
             <text>PORTABLE</text>
 
             <storyboard if="${system.hardwareType} == 'portable'">
                 <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
             </storyboard>
         </text>
+        <text name="gamecc_top_all" extra="true">
+            <pos>0.36 0.045</pos>
+            <text>TODOS</text>
 
-        <text name="gamecc_top_arcade_line" extra="true">
-            <pos>0.09 0.11</pos>
-            <backgroundColor if="${system.hardwareType} == 'arcade'">${pinkColor}</backgroundColor>
+            <storyboard if="${system.name} == 'all'">
+                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
+            </storyboard>
         </text>
-        <text name="gamecc_top_computer_line" extra="true">
-            <pos>0.15 0.11</pos>
-            <backgroundColor if="${system.hardwareType} == 'computer'">${pinkColor}</backgroundColor>
-        </text>
-        <text name="gamecc_top_console_line" extra="true">
-            <pos>0.21 0.11</pos>
-            <backgroundColor if="${system.hardwareType} == 'console'">${pinkColor}</backgroundColor>
-        </text>
-        <text name="gamecc_top_port_line" extra="true">
-            <pos>0.27 0.11</pos>
-            <backgroundColor if="${system.hardwareType} == 'port'">${pinkColor}</backgroundColor>
-        </text>
-        <text name="gamecc_top_portable_line" extra="true">
-            <pos>0.33 0.11</pos>
-            <backgroundColor if="${system.hardwareType} == 'portable'">${pinkColor}</backgroundColor>
+        <text name="gamecc_top_collection" extra="true">
+            <pos>0.42 0.045</pos>
+            <text>COLEÇÕES</text>
+
+            <storyboard if="${system.hardwareType} == 'custom collection'">
+                <animation property="color" from="FFFFFF50" to="FFFFFF" duration="300" mode="easeIn" />
+            </storyboard>
         </text>
 
         <!-- menu right -->
         <image name="gamecc_logo_complete" extra="true">
             <origin>1 0</origin>
-            <pos>0.988 0.054</pos>
+            <pos>0.965 0.042</pos>
             <size>0.1 0</size>
             <path>./../_assets/gamecc_logo.webp</path>
-            <opacity>0.6</opacity>
-            <zIndex>98</zIndex>
-        </image>
-
-        <image name="gamecc_grid_icon" extra="true">
-            <origin>1 0</origin>
-            <pos>0.87 0.06</pos>
-            <size>0.012 0</size>
-            <path>./_assets/icons/grid.webp</path>
-            <opacity>0.6</opacity>
-            <zIndex>98</zIndex>
-        </image>
-
-        <text name="gamecc_system_fullName" extra="true">
-            <origin>1 0</origin>
-            <pos>0.84 0.059</pos>
-            <size>0.3 0.025</size>
-            <text>${system.fullName}</text>
-            <fontPath>./_assets/RobotoCondensed-Regular.ttf</fontPath>
-            <fontSize>0.024</fontSize>
             <color>FFFFFF</color>
-            <alignment>right</alignment>
-            <zIndex>99</zIndex>
-        </text>
-
+            <opacity>0.3</opacity>
+            <zIndex>98</zIndex>
+        </image>
     </view>
 
 </theme>

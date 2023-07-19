@@ -105,8 +105,8 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./../_assets/default.webp</path>
-            <path>./../$system/assets/wall.webp</path>
+            <path>./_assets/default.webp</path>
+            <path>./$system/assets/wall.webp</path>
             <zIndex>1</zIndex>
         </image>
 
@@ -120,21 +120,19 @@
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
             </storyboard>
-
         </image>
 
         <!-- Video background -->
         <video ifSubset="video_gamelist:Ativo" name="md_video">
             <origin>0 0</origin>
             <pos>0 0</pos>
-            <size>1 1</size>
+            <size>1 0.8</size>
             <delay>3</delay>
             <zIndex>15</zIndex>
 
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
             </storyboard>
-
         </video>
 
         <!-- System Icon -->
@@ -142,22 +140,44 @@
             <origin>0 0.5</origin>
             <pos>0.015 0.07</pos>
             <size>0.025 </size>
-            <path>./../_assets/systemicons/default.webp</path>
-            <path>./../_assets/systemicons/$system.webp</path>
+            <path>./_assets/systemicons/default.webp</path>
+            <path>./_assets/systemicons/$system.webp</path>
             <opacity>0.9</opacity>
             <zIndex>99</zIndex>
         </image>
 
         <!-- System Name -->
-        <text name="logoText">
+        <text name="logoText" extra="true">
             <origin>0 0.5</origin>
             <pos>0.05 0.069</pos>
+            <text>${system.fullName}</text>
             <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
             <fontSize>0.026</fontSize>
             <color>FFFFFF</color>
             <alignment>left</alignment>
             <zIndex>99</zIndex>
         </text>
+
+        <!-- Line -->
+        <image name="gamecc_sidebar_line" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0.11</pos>
+            <size>1 0.001</size>
+            <path>./_assets/line.webp</path>
+            <opacity>0.2</opacity>
+            <zIndex>98</zIndex>   
+        </image>
+
+        <!-- Logo do Sistema -->
+        <image name="logo">
+            <origin>1 0.5</origin>
+            <pos>0.98 0.058</pos>
+            <size>0.15 </size>
+            <color>FFFFFF60</color>
+            <scale>0.7</scale>
+            <path>./_assets/logos/$system.webp</path>
+            <zIndex>99</zIndex>
+        </image>
 
         <!-- Game Name -->
         <text name="md_name">

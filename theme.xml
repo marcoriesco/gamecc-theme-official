@@ -39,11 +39,6 @@
         <include name="Desativado" />
     </subset>
 
-    <!-- VIDEO GAMELIST -->
-    <subset name="video_gamelist" displayName="VÍDEO GAMELIST">
-        <include name="Ativo" />
-        <include name="Desativado" />
-    </subset>
 
     <feature supported="carousel">
         <view name="system">
@@ -54,13 +49,19 @@
     <variables>
         <pinkColor>9f0043</pinkColor>
         <yellowColor>facc00</yellowColor>
+        
+        <gameccColor>${yellowColor}</gameccColor>
+        <arcadeColor>cc2a41</arcadeColor>
+        <computerColor>352f3d</computerColor>
+        <consoleColor>0074b4</consoleColor>
+        <portColor>583b7e</portColor>
+        <portableColor>027b7f</portableColor>
+        <allColor>${pinkColor}</allColor>
+        <collectionColor>${pinkColor}</collectionColor>
     </variables>
 
     <include name="system">./_views/gamecc.xml</include>
     <include name="menu">./_views/menu.xml</include>
     <include name="grid">./_views/gamecc_gamelist.xml</include>
-
-    <!-- Specific layout for systems -->
-    <include>./${system.theme}/custom.xml</include>
 
 </theme>
