@@ -200,7 +200,7 @@
         <!-- Rating Classificação do Game -->
         <rating name="md_rating">
             <origin>0 0</origin>
-            <pos>0.05 0.4</pos>
+            <pos>0.05 0.401</pos>
             <size>0 0.02</size>
             <color>FFFFFF</color>
             <unfilledColor>FFFFFF</unfilledColor>
@@ -215,8 +215,8 @@
         <!-- Game md_releasedate & md_publisher -->
         <datetime name="md_releasedate, md_publisher">
             <origin>0 0</origin>
-            <pos>0.116 0.396</pos>
-            <size>0.05 0</size>
+            <pos>0.116 0.404</pos>
+            <size>0.03 0.016</size>
             <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
             <fontSize>0.020</fontSize>
             <color>FFFFFF</color>
@@ -224,6 +224,7 @@
             <glowSize>1</glowSize>
             <alignment>left</alignment>
             <format>%Y</format>
+            <value>1999</value>
             <zIndex>99</zIndex>
 
             <storyboard event="activate">
@@ -231,8 +232,8 @@
             </storyboard>
         </datetime>
         <text name="md_publisher">
-            <pos>0.15 0.396</pos>
-            <size>0.5 0</size>
+            <pos>0.15 0.404</pos>
+            <size>0.5 0.016</size>
         </text>
 
         <!-- Game description -->

@@ -42,15 +42,15 @@
 
             <size>0.06 0.11</size>
 
-            <backgroundColor>${pinkColor}</backgroundColor>
-            <backgroundColor if="${system.name} == 'gamecc'">${gameccColor}</backgroundColor>
-            <backgroundColor if="${system.hardwareType} == 'arcade'">${arcadeColor}</backgroundColor>
-            <backgroundColor if="${system.hardwareType} == 'computer'">${computerColor}</backgroundColor>
-            <backgroundColor if="${system.hardwareType} == 'console'">${consoleColor}</backgroundColor>
-            <backgroundColor if="${system.hardwareType} == 'port'">${portColor}</backgroundColor>
-            <backgroundColor if="${system.hardwareType} == 'portable'">${portableColor}</backgroundColor>
-            <backgroundColor if="${system.name} == 'all'">${allColor}</backgroundColor>
-            <backgroundColor if="${system.hardwareType} == 'custom collection'">${collectionColor}</backgroundColor>
+            <backgroundColor>${pinkColor}90</backgroundColor>
+            <backgroundColor if="${system.name} == 'gamecc'">${gameccColor}90</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'arcade'">${arcadeColor}90</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'computer'">${computerColor}90</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'console'">${consoleColor}90</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'port'">${portColor}90</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'portable'">${portableColor}90</backgroundColor>
+            <backgroundColor if="${system.name} == 'all'">${allColor}90</backgroundColor>
+            <backgroundColor if="${system.hardwareType} == 'custom collection'">${collectionColor}90</backgroundColor>
 
             <zIndex>98</zIndex>
 

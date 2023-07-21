@@ -76,8 +76,10 @@
             <text if="${system.name} == 'naomi'">NAOMI</text>
             <text if="${system.name} == 'naomi2'">NAOMI 2</text>
             <text if="${system.name} == 'neogeo'">NEO GEO</text>
+            <text if="${system.name} == 'neogeo64'">NEO GEO 64</text>
 
             <text if="${system.name} == 'windows'">PC GAMER</text>
+            <text if="${system.name} == 'pinballfx3'">PINBALL FX3</text>
 
             <text if="${system.name} == 'neogeoaes'">NEO GEO</text>
             <text if="${system.name} == 'jaguar'">JAGUAR</text>
@@ -140,9 +142,11 @@
             <text if="${system.name} == 'naomi2'">SEGA</text>
             <text if="${system.name} == 'hikaru'">SEGA</text>
             <text if="${system.name} == 'neogeo'">MVS</text>
+            <text if="${system.name} == 'neogeo64'">HYPER</text>
 
             <text if="${system.name} == 'dos'">MICROSOFT</text>
             <text if="${system.name} == 'windows'">WINDOWS</text>
+            <text if="${system.name} == 'popcap'">GAMES</text>
 
             <text if="${system.name} == 'neogeoaes'">AES</text>
             <text if="${system.name} == 'gamecube'">NINTENDO</text>
