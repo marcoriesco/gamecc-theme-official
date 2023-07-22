@@ -30,6 +30,7 @@
                 ${system.name} == 'snes-msu1' || 
                 ${system.name} == 'n64' || 
                 ${system.name} == 'ngage' || 
+                ${system.name} == 'neogeocd' || 
                 ${system.name} == 'pokemini' || 
                 ${system.name} == 'pcengine' || 
                 ${system.name} == 'pcenginecd' || 

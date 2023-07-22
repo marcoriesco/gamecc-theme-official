@@ -16,6 +16,7 @@
             <defaultTransition>instant</defaultTransition>
             <zIndex>45</zIndex>
             <zIndex>0</zIndex>
+            <pos>100 100</pos>
         </carousel>
 
         <text name="logoText">
