@@ -49,7 +49,6 @@
     <variables>
         <pinkColor>9f0043</pinkColor>
         <yellowColor>facc00</yellowColor>
-        
         <gameccColor>${yellowColor}</gameccColor>
         <arcadeColor>cc2a41</arcadeColor>
         <computerColor>352f3d</computerColor>

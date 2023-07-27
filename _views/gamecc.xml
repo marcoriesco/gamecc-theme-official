@@ -69,7 +69,9 @@
             <size>1 0.10</size>
 
             <text>${system.name}</text>
+            <text if="${system.name} == 'all'">OS JOGOS</text>
             <text if="${system.name} == 'favorites'">FAVORITOS</text>
+            
             <text if="${system.name} == 'hbmame'">ARCADE HACKS</text>
             <text if="${system.name} == 'daphne'">LASERDISC</text>
             <text if="${system.name} == 'model2'">MODEL 2</text>
@@ -78,11 +80,14 @@
             <text if="${system.name} == 'naomi2'">NAOMI 2</text>
             <text if="${system.name} == 'neogeo'">NEO GEO</text>
             <text if="${system.name} == 'neogeo64'">NEO GEO 64</text>
+            <text if="${system.name} == 'segastv'">SEGA ST-V</text>
 
             <text if="${system.name} == 'windows'">PC GAMER</text>
             <text if="${system.name} == 'pinballfx3'">PINBALL FX3</text>
 
+            <text if="${system.name} == 'dreamcast'">DREAMCAST</text>
             <text if="${system.name} == 'neogeoaes'">NEO GEO</text>
+            <text if="${system.name} == 'neogeocd'">NEO GEO</text>
             <text if="${system.name} == 'jaguar'">JAGUAR</text>
             <text if="${system.name} == 'jaguarcd'">JAGUAR CD</text>
             <text if="${system.name} == 'n64'">NINTENDO 64</text>
@@ -90,8 +95,18 @@
             <text if="${system.name} == 'virtualboy'">VIRTUAL BOY</text>
             <text if="${system.name} == 'wii'">WII</text>
             <text if="${system.name} == 'wiiu'">WII U</text>
+            <text if="${system.name} == 'wiiware'">WII WARE</text>
             <text if="${system.name} == 'xbox360'">XBOX 360</text>
             <text if="${system.name} == 'xboxlivearcade'">LIVE ARCADE</text>
+            <text if="${system.name} == 'psx'">PLAYSTATION</text>
+            <text if="${system.name} == 'ps2'">PLAYSTATION 2</text>
+            <text if="${system.name} == 'ps3'">PLAYSTATION 3</text>
+            <text if="${system.name} == 'snes'">NINTENDO</text>
+            <text if="${system.name} == 'snes-msu1'">NINTENDO</text>
+            <text if="${system.name} == 'snesbr'">NINTENDO</text>
+            <text if="${system.name} == 'megadrive'">MEGADRIVE</text>
+            <text if="${system.name} == 'megadrive-msu'">MEGADRIVE</text>
+            <text if="${system.name} == 'switch'">SWITCH</text>
 
             <text if="${system.name} == 'scummvm'">SCUMM VM</text>
 
@@ -107,8 +122,9 @@
             <text if="${system.name} == 'pokemini'">POKÉMON</text>
             <text if="${system.name} == 'wswan'">WonderSwan</text>
             <text if="${system.name} == 'wswanc'">WonderSwan</text>
-
-            <text if="${system.name} == 'all'">OS JOGOS</text>
+            <text if="${system.name} == 'psp'">PLAYSTATION</text>
+            <text if="${system.name} == 'pspminis'">MINIS</text>
+            <text if="${system.name} == 'psvita'">PSVITA</text>
 
             <fontPath>./_assets/fonts/LEMONMILK-Bold.otf</fontPath>
             <fontSize>0.12</fontSize>
@@ -121,7 +137,8 @@
             <zIndex>50</zIndex>
 
             <storyboard>
-                <animation property="pos" from="0 0.75" to="0 0.65" duration="300" mode="EaseIn" />
+                <!-- <animation property="pos" from="0 0.75" to="0 0.65" duration="300" mode="EaseIn" /> -->
+                <animation property="pos" from="0.1 0.65" to="0 0.65" duration="300" mode="EaseIn" />
                 <animation property="opacity" from="0" to="1" duration="1000" mode="EaseIn" />
             </storyboard>
         </text>
@@ -132,8 +149,12 @@
             <size>1 0.10</size>
 
             <text>${system.hardwareType}</text>
+            <text if="${system.name} == 'all'">TODOS</text>
             <text if="${system.hardwareType} == 'custom collection'">coleção do</text>
+            <text if="${system.name} == 'favorites'"></text>
+
             <text if="${system.name} == 'arcade'"></text>
+            <text if="${system.name} == 'atomiswave'"></text>
             <text if="${system.name} == 'chihiro'">SEGA</text>
             <text if="${system.name} == 'hbmame'">MAME HOMEBREW</text>
             <text if="${system.name} == 'daphne'">DAPHNE</text>
@@ -144,24 +165,49 @@
             <text if="${system.name} == 'hikaru'">SEGA</text>
             <text if="${system.name} == 'neogeo'">MVS</text>
             <text if="${system.name} == 'neogeo64'">HYPER</text>
+            <text if="${system.name} == 'segastv'">TITAN VIDEO</text>
+            <text if="${system.name} == 'teknoparrot'"></text>
+            <text if="${system.name} == 'triforce'">SEGA</text>
+            <text if="${system.name} == 'zinc'">SONY</text>
 
             <text if="${system.name} == 'dos'">MICROSOFT</text>
             <text if="${system.name} == 'windows'">WINDOWS</text>
             <text if="${system.name} == 'popcap'">GAMES</text>
+            <text if="${system.name} == 'pinballfx3'"></text>
 
+            <text if="${system.name} == '3do'"></text>
+            <text if="${system.name} == 'dreamcast'">SEGA</text>
+            <text if="${system.name} == 'mastersystem'">SEGA</text>
             <text if="${system.name} == 'neogeoaes'">AES</text>
+            <text if="${system.name} == 'neogeocd'">CD</text>
             <text if="${system.name} == 'gamecube'">NINTENDO</text>
             <text if="${system.name} == 'jaguar'">ATARI</text>
             <text if="${system.name} == 'jaguarcd'">ATARI</text>
             <text if="${system.name} == 'megadrive'">SEGA</text>
+            <text if="${system.name} == 'n64'"></text>
             <text if="${system.name} == 'n64dd'">DISK</text>
             <text if="${system.name} == 'virtualboy'">NINTENDO</text>
             <text if="${system.name} == 'wii'">NINTENDO</text>
             <text if="${system.name} == 'wiiu'">NINTENDO</text>
+            <text if="${system.name} == 'wiiware'">NINTENDO</text>
             <text if="${system.name} == 'xbox'">MICROSOFT</text>
             <text if="${system.name} == 'xbox360'">MICROSOFT</text>
             <text if="${system.name} == 'xboxlivearcade'">XBOX</text>
+            <text if="${system.name} == 'psx'">SONY</text>
+            <text if="${system.name} == 'ps2'">SONY</text>
+            <text if="${system.name} == 'ps3'">SONY</text>
+            <text if="${system.name} == 'snes'">SUPER</text>
+            <text if="${system.name} == 'snes-msu1'">SUPER MSU1</text>
+            <text if="${system.name} == 'snesbr'">SUPER PT-BR</text>
+            <text if="${system.name} == 'megadrive'">SEGA</text>
+            <text if="${system.name} == 'megadrive-msu'">MSU</text>
+            <text if="${system.name} == 'switch'">NINTENDO</text>
 
+            <text if="${system.name} == 'scummvm'">VIRTUAL MACHINE</text>
+            <text if="${system.name} == 'openbor'"></text>
+            <text if="${system.name} == 'mugen'"></text>
+
+            <text if="${system.name} == 'gw'"></text>
             <text if="${system.name} == '3ds'">NINTENDO</text>
             <text if="${system.name} == 'gamegear'">SEGA</text>
             <text if="${system.name} == 'gb'">NINTENDO</text>
@@ -171,11 +217,13 @@
             <text if="${system.name} == 'ngpc'">NEO GEO</text>
             <text if="${system.name} == 'ngage'">NOKIA</text>
             <text if="${system.name} == 'konamihandheld'">KONAMI</text>
+            <text if="${system.name} == 'nds'"></text>
             <text if="${system.name} == 'pokemini'">MINI</text>
             <text if="${system.name} == 'wswan'">BANDAI</text>
             <text if="${system.name} == 'wswanc'">BANDAI COLOR</text>
-
-            <text if="${system.name} == 'all'">TODOS</text>
+            <text if="${system.name} == 'psp'">PSP</text>
+            <text if="${system.name} == 'pspminis'">PSP</text>
+            <text if="${system.name} == 'psvita'">SONY</text>
 
             <fontPath>./_assets/fonts/LEMONMILK-Medium.otf</fontPath>
             <fontSize>0.05</fontSize>
@@ -188,7 +236,8 @@
             <zIndex>50</zIndex>
 
             <storyboard>
-                <animation property="pos" from="0 0.65" to="0 0.55" duration="300" mode="EaseIn" />
+                <!-- <animation property="pos" from="0 0.65" to="0 0.55" duration="300" mode="EaseIn" /> -->
+                <animation property="pos" from="0.1 0.55" to="0 0.55" duration="300" mode="EaseIn" />
                 <animation property="opacity" from="0" to="1" duration="1000" mode="EaseIn" />
             </storyboard>
         </text>
@@ -203,6 +252,7 @@
             <pos>0 0.76</pos>
             <size>1 0.10</size>
             <text>{binding:total} games</text>
+            <text if="${system.name} == 'gamecc'">{binding:total} sistemas</text>
             <fontPath>./_assets/fonts/LEMONMILK-Medium.otf</fontPath>
             <fontSize>0.036</fontSize>
             
@@ -221,8 +271,8 @@
             <zIndex>95</zIndex>
 
             <storyboard>
-                <animation property="pos" from="0 0.86" to="0 0.76" duration="250" mode="EaseIn" />
-                <animation property="opacity" from="0" to="1" duration="1000" mode="EaseIn" />
+                <!-- <animation property="pos" from="0 0.86" to="0 0.76" duration="250" mode="EaseIn" /> -->
+                <animation property="opacity" from="0" to="1" duration="1200" mode="EaseIn" />
             </storyboard>
         </text>
 
