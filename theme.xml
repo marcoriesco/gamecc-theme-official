@@ -10,7 +10,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 
-<theme defaultView="grid">
+<theme defaultView="gamecc">
     <formatVersion>7</formatVersion>
 
     <!-- ICONSETS -->
@@ -33,9 +33,9 @@
         <include name="Desativado" />
     </subset>
 
-    <!-- TOPBAR GAMELIST -->
-    <subset name="topbar_gamelist" displayName="TOPBAR GAMELIST">
-        <include name="Ativo">./_views/topbar_gamelist.xml</include>
+    <!-- VIDEO GAMELIST -->
+    <subset name="video_gamelist" displayName="VIDEO GAMELIST">
+        <include name="Ativo" />
         <include name="Desativado" />
     </subset>
 
@@ -61,6 +61,8 @@
 
     <include name="system">./_views/gamecc.xml</include>
     <include name="menu">./_views/menu.xml</include>
-    <include name="grid">./_views/gamecc_gamelist.xml</include>
+    
+    <include name="gamecc">./_views/gamecc_gamelist.xml</include>
+    <include name="gamecc_alt">./_views/gamecc_gamelist_alt.xml</include>
 
 </theme>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <customView name="gamecc_alt" tinyScreen="false" inherits="gamecarousel" displayName="GAMECC GAMELIST ALT">
+        <gamecarousel name="gamecarousel">
+            <type>horizontal</type>
+            <origin>0 0</origin>
+            <pos>0.45 0</pos>
+            <size>0.55 1</size>
+            <backgroundColor>333333</backgroundColor>
+            <logoScale>2</logoScale>
+            <logoSize>0.15 0.5</logoSize>
+            <maxLogoCount>6</maxLogoCount>
+            <logoRotation>0</logoRotation>
+            <logoRotationOrigin>1 1</logoRotationOrigin>
+            <logoAlignment>center</logoAlignment>
+            <logoPos>0.075 0.35</logoPos>
+            <minLogoOpacity>0.3</minLogoOpacity>
+            <imageSource>thumbnail</imageSource>
+            <zIndex>21</zIndex>
+        </gamecarousel>
+
+        <text name="gamecarouselLogoText">
+            <color>FFFFFFFF</color>
+            <glowColor>00000050</glowColor>
+            <glowSize>3</glowSize>
+            <glowOffset>3</glowOffset>
+            <lineSpacing>1.0</lineSpacing>
+            <fontPath>./_assets/fonts/LEMONMILK-Bold.otf</fontPath>
+            <fontSize>0.040</fontSize>
+        </text>
+
+        <!-- Overlay background -->
+        <image name="overlay" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_assets/overlay_gamelist_alt.webp</path>
+            <zIndex>16</zIndex>
+        </image>
+
+        <!-- Background Default -->
+        <image name="background_default" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./_assets/default.webp</path>
+            <path>./$system/assets/wall.webp</path>
+            <zIndex>1</zIndex>
+        </image>
+
+        <!-- Fanart background -->
+        <image name="md_fanart">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>0.7 0.7</size>
+            <zIndex>14</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </image>
+
+        <!-- Video background -->
+        <video ifSubset="video_gamelist:Ativo" name="md_video">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>0.7 0.7</size>
+            <delay>3</delay>
+            <zIndex>15</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </video>
+
+        <!-- System Icon -->
+        <image name="system_controller_icon" extra="true">
+            <origin>0 0.5</origin>
+            <pos>0.015 0.07</pos>
+            <size>0.025 </size>
+            <path>./_assets/systemicons/default.webp</path>
+            <path>./_assets/systemicons/$system.webp</path>
+            <opacity>0.9</opacity>
+            <zIndex>99</zIndex>
+        </image>
+
+        <!-- System Name -->
+        <text name="logoText" extra="true">
+            <origin>0 0.5</origin>
+            <pos>0.05 0.069</pos>
+            <text>${system.fullName}</text>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.026</fontSize>
+            <color>FFFFFF</color>
+            <alignment>left</alignment>
+            <zIndex>99</zIndex>
+        </text>
+
+        <!-- Line -->
+        <image name="gamecc_sidebar_line" extra="true">
+            <origin>0 0</origin>
+            <pos>0.015 0.11</pos>
+            <size>1 0.001</size>
+            <path>./_assets/line.webp</path>
+            <opacity>0.2</opacity>
+            <zIndex>98</zIndex>   
+        </image>
+
+        <!-- Logo do Sistema -->
+        <image name="logo">
+            <origin>1 0.5</origin>
+            <pos>0.98 0.058</pos>
+            <size>0.15 </size>
+            <color>FFFFFF60</color>
+            <scale>0.7</scale>
+            <path>./_assets/logos/$system.webp</path>
+            <zIndex>99</zIndex>
+        </image>
+
+        <!-- Game Name -->
+        <text name="md_name">
+            <origin>0 0</origin>
+            <pos>0.05 0.52</pos>
+            <size>1 0</size>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>FFFFFF</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>left</alignment>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </text>
+
+        <!-- Rating Classificação do Game -->
+        <rating name="md_rating">
+            <origin>0 0</origin>
+            <pos>0.05 0.571</pos>
+            <size>0 0.02</size>
+            <color>FFFFFF</color>
+            <unfilledColor>FFFFFF</unfilledColor>
+            <horizontalAlignment>center</horizontalAlignment>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </rating>
+
+        <!-- Game md_releasedate & md_publisher -->
+        <datetime name="md_releasedate, md_publisher">
+            <origin>0 0</origin>
+            <pos>0.116 0.574</pos>
+            <size>0.03 0.016</size>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>FFFFFF</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>left</alignment>
+            <format>%Y</format>
+            <value>1999</value>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </datetime>
+        <text name="md_publisher">
+            <pos>0.15 0.574</pos>
+            <size>0.5 0.016</size>
+        </text>
+
+        <!-- Game description -->
+        <text name="md_description">
+            <origin>0 0</origin>
+            <pos>0.05 0.62</pos>
+            <size>0.35 0.10</size>
+            <fontPath>./_assets/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.016</fontSize>
+            <color>CCCCCC</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>left</alignment>
+            <lineSpacing>1.16</lineSpacing>
+
+            <storyboard event="activate">
+                <animation property="size" from="0.35 0" to="0.35 0.10" duration="600" mode="linear" />
+            </storyboard>
+        </text>
+
+        <!-- Game Players icon -->
+        <image name="game_players_icon" extra="true">
+            <origin>0 0</origin>
+            <pos>0.02 0.529</pos>
+            <size>0.020 0</size>
+            <path>./../_assets/systemicons/{game:players}p.webp</path>
+            <opacity>0.9</opacity>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </image>
+
+        <!-- <text name="game_players_iconText" extra="true">
+            <origin>0 0</origin>
+            <pos>0.02 0.3</pos>
+            <size>0.020 0</size>
+            <text>{game:players}</text>
+            <fontSize>0.02</fontSize>
+            <color>FFFFFF</color>
+            <opacity>0.9</opacity>
+            <zIndex>99</zIndex>
+        </text>    -->
+
+        <!-- VIDEO SMOKE -->
+        <video name="md_video_smoke" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./../_assets/videos/smoke.mp4</path>
+            <opacity>0.15</opacity>
+            <zIndex>16</zIndex>
+        </video>
+
+    </customView>
+
+</theme>

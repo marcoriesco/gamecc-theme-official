@@ -2,8 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <view name="grid" tinyScreen="false">
-
+    <customView name="gamecc" tinyScreen="false" inherits="grid" displayName="GAMECC GAMELIST">
         <imagegrid name="gamegrid">
             <origin>0 0</origin>
             <pos>0.05 0.65</pos>
@@ -279,6 +278,6 @@
             <opacity>0.9</opacity>
             <zIndex>99</zIndex>
         </text>    -->
-    </view>
+    </customView>
 
 </theme>
