@@ -2,7 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <customView name="gamecc_alt" tinyScreen="false" inherits="gamecarousel" displayName="GAMECC GAMELIST ALT">
+    <customView name="gamecarousel" tinyScreen="false">
         <gamecarousel name="gamecarousel">
             <type>horizontal</type>
             <origin>0 0</origin>
@@ -225,7 +225,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./../_assets/videos/smoke.mp4</path>
-            <opacity>0.15</opacity>
+            <opacity>0.1</opacity>
             <zIndex>16</zIndex>
         </video>
 
