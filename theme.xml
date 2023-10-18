@@ -14,18 +14,7 @@
     <formatVersion>7</formatVersion>
 
     <!-- ICONSETS -->
-    <subset name="iconset" displayName="ICONSETS">
-        <include name="PADRÃO">./_assets/iconsets/default.xml</include>
-        <include name="GAMECC">./_assets/iconsets/gamecc.xml</include>
-        <include name="ARCADE">./_assets/iconsets/arcade.xml</include>
-        <include name="SNES">./_assets/iconsets/snes.xml</include>
-        <include name="SNES ALT">./_assets/iconsets/snesalt.xml</include>
-        <include name="PSX">./_assets/iconsets/psx.xml</include>
-        <include name="PSX ALT">./_assets/iconsets/psx1.xml</include>
-        <include name="XBOX">./_assets/iconsets/xbox.xml</include>
-        <include name="XBOX ONE">./_assets/iconsets/xboxone.xml</include>
-        <include name="NINTENDO SWITCH">./_assets/iconsets/switch.xml</include>
-    </subset>
+    <include name="DEFAULT">./_assets/iconsets/default.xml</include>
 
     <!-- TOPBAR SYSTEM -->
     <subset name="topbar" displayName="TOPBAR">

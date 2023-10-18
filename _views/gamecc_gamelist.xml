@@ -82,7 +82,7 @@
 		<image name="gridtile.favorite">
 			<origin>0.5 0.5</origin>
 			<pos>0.95 0.05</pos>
-			<path>./_assets/favorite.png</path>
+			<path>./_assets/_parts/favorite.png</path>
 			<maxSize>0.10 0.10</maxSize>
 			<horizontalAlignment>right</horizontalAlignment>
 		</image>
@@ -96,7 +96,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/overlay_gamelist.png</path>
+            <path>./_assets/_parts/overlay_gamelist.png</path>
             <zIndex>16</zIndex>
         </image>
 
@@ -105,7 +105,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/default.png</path>
+            <path>./_assets/_parts/default.png</path>
             <path>./$system/assets/wall.png</path>
             <zIndex>1</zIndex>
         </image>
@@ -163,7 +163,7 @@
             <origin>0 0</origin>
             <pos>0 0.11</pos>
             <size>1 0.001</size>
-            <path>./_assets/line.png</path>
+            <path>./_assets/_parts/line.png</path>
             <opacity>0.2</opacity>
             <zIndex>98</zIndex>   
         </image>

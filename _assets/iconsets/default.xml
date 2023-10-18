@@ -9,17 +9,17 @@
 			<fontSize>0.016</fontSize>
 			<textColor>FFFFFFFF</textColor>
 			<iconColor>FFFFFFFF</iconColor>
-			<iconUpDown>./gamecc/updown.webp</iconUpDown>
-			<iconLeftRight>./gamecc/leftright.webp</iconLeftRight>
-			<iconUpDownLeftRight>./gamecc/all.webp</iconUpDownLeftRight>
-			<iconA>./gamecc/a.webp</iconA>
-			<iconB>./gamecc/b.webp</iconB>
-			<iconX>./gamecc/x.webp</iconX>
-			<iconY>./gamecc/y.webp</iconY>
-			<iconL>./gamecc/l.webp</iconL>
-			<iconR>./gamecc/r.webp</iconR>
-			<iconStart>./gamecc/start.webp</iconStart>
-			<iconSelect>./gamecc/select.webp</iconSelect>
+			<iconUpDown>./DEFAULT/updown.png</iconUpDown>
+			<iconLeftRight>./DEFAULT/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./DEFAULT/all.png</iconUpDownLeftRight>
+			<iconA>./DEFAULT/a.png</iconA>
+			<iconB>./DEFAULT/b.png</iconB>
+			<iconX>./DEFAULT/x.png</iconX>
+			<iconY>./DEFAULT/y.png</iconY>
+			<iconL>./DEFAULT/l.png</iconL>
+			<iconR>./DEFAULT/r.png</iconR>
+			<iconStart>./DEFAULT/start.png</iconStart>
+			<iconSelect>./DEFAULT/select.png</iconSelect>
 		</helpsystem>
 	</view>
 

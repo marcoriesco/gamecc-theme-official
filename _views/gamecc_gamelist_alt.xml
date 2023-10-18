@@ -36,7 +36,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/overlay_gamelist_alt.png</path>
+            <path>./_assets/_parts/overlay_gamelist_alt.png</path>
             <zIndex>16</zIndex>
         </image>
 
@@ -45,7 +45,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/default.png</path>
+            <path>./_assets/_parts/default.png</path>
             <path>./$system/assets/wall.png</path>
             <zIndex>1</zIndex>
         </image>
@@ -103,7 +103,7 @@
             <origin>0 0</origin>
             <pos>0.015 0.11</pos>
             <size>1 0.001</size>
-            <path>./_assets/line.png</path>
+            <path>./_assets/_parts/line.png</path>
             <opacity>0.2</opacity>
             <zIndex>98</zIndex>   
         </image>
@@ -118,6 +118,32 @@
             <path>./_assets/logos/$system.png</path>
             <zIndex>99</zIndex>
         </image>
+
+
+        <!-- Game Players icon -->
+        <image name="game_players_icon" extra="true">
+            <origin>0 0</origin>
+            <pos>0.02 0.529</pos>
+            <size>0.020 0</size>
+            <path>./../_assets/systemicons/{game:players}p.png</path>
+            <opacity>0.9</opacity>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </image>
+
+        <!-- <text name="game_players_iconText" extra="true">
+            <origin>0 0</origin>
+            <pos>0.02 0.3</pos>
+            <size>0.020 0</size>
+            <text>{game:players}</text>
+            <fontSize>0.02</fontSize>
+            <color>FFFFFF</color>
+            <opacity>0.9</opacity>
+            <zIndex>99</zIndex>
+        </text>    -->
 
         <!-- Game Name -->
         <text name="md_name">
@@ -194,30 +220,43 @@
             </storyboard>
         </text>
 
-        <!-- Game Players icon -->
-        <image name="game_players_icon" extra="true">
+        <!-- Game Play Button -->
+        <image name="md_game_play" extra="true">
             <origin>0 0</origin>
-            <pos>0.02 0.529</pos>
-            <size>0.020 0</size>
-            <path>./../_assets/systemicons/{game:players}p.png</path>
-            <opacity>0.9</opacity>
-            <zIndex>99</zIndex>
+            <pos>0.28 0.75</pos>
+            <size>0.1195 0</size>
+            <path>./../_assets/_parts/play_btn.png</path>
+            <zIndex>17</zIndex>
 
-            <storyboard event="activate">
-                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
-            </storyboard>
+            <!-- <storyboard event="activate">
+                <animation property="pos" from="0.28 0.75" to="0.30 0.75" duration="600" mode="EaseIn" />
+                <animation property="opacity" begin="0" from="0" to="1" duration="600" mode="linear" />
+            </storyboard> -->
+        </image>
+        <text name="md_game_play_text" extra="true">
+            <origin>0 0</origin>
+            <pos>0.28 0.75</pos>
+            <size>0.1195 0.06</size>
+            <text>JOGAR</text>
+            <fontPath>./_assets/fonts/RobotoCondensed-Bold.ttf</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>FFFFFF</color>
+            <glowColor>00000016</glowColor>
+            <glowSize>1</glowSize>
+            <alignment>right</alignment>
+            <lineSpacing>1.16</lineSpacing>
+            <padding>0 0 0.018 0</padding>
+
+            <zIndex>17</zIndex>
+        </text>
+        <image name="md_game_play_B" extra="true">
+            <origin>0 0</origin>
+            <pos>0.29 0.758</pos>
+            <size>0.024 0</size>
+            <path>./../_assets/iconsets/DEFAULT/b.png</path>
+            <zIndex>17</zIndex>
         </image>
 
-        <!-- <text name="game_players_iconText" extra="true">
-            <origin>0 0</origin>
-            <pos>0.02 0.3</pos>
-            <size>0.020 0</size>
-            <text>{game:players}</text>
-            <fontSize>0.02</fontSize>
-            <color>FFFFFF</color>
-            <opacity>0.9</opacity>
-            <zIndex>99</zIndex>
-        </text>    -->
 
         <!-- VIDEO SMOKE -->
         <video name="md_video_smoke" extra="true">

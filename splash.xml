@@ -23,7 +23,7 @@
             <pos>0 0</pos>
             <origin>0 0</origin>
             <size>1 1</size>
-	    	<path>./_assets/splash.png</path>
+	    	<path>./_assets/_parts/splash.png</path>
 			<zIndex>10</zIndex>
 		</image>
 	

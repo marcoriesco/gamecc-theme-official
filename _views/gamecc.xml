@@ -58,7 +58,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/overlay_gamelist.png</path>
+            <path>./_assets/_parts/overlay_gamelist.png</path>
             <zIndex>41</zIndex>
         </image>
 
