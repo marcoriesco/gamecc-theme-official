@@ -16,7 +16,7 @@
         <image name="background_gamesplash" extra="true">
             <origin>0 0</origin>
             <size>1 1</size>
-            <path>./_assets/arts/gamesplash.webp</path>
+            <path>./_assets/arts/gamesplash.png</path>
             <zIndex>5</zIndex>
         </image>
 

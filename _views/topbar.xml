@@ -9,7 +9,7 @@
             <origin>0 0</origin>
             <pos>0.019 0.035</pos>
             <size>0.025 0</size>
-            <path>./../_assets/gamecc_color.webp</path>
+            <path>./../_assets/gamecc_color.png</path>
             <color if="${system.name} == 'gamecc'">000000</color>
             <opacity>0.6</opacity>
             <opacity if="${system.name} == 'gamecc'">1</opacity>
@@ -146,7 +146,7 @@
             <origin>1 0</origin>
             <pos>0.965 0.042</pos>
             <size>0.1 0</size>
-            <path>./../_assets/gamecc_logo.webp</path>
+            <path>./../_assets/gamecc_logo.png</path>
             <color>FFFFFF</color>
             <opacity>0.3</opacity>
             <zIndex>98</zIndex>

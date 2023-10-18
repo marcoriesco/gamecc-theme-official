@@ -30,7 +30,7 @@
         </text>
 
         <image name="logo">
-            <path>./../_assets/logos/$system.webp</path>
+            <path>./../_assets/logos/$system.png</path>
             <linearSmooth>true</linearSmooth>
 
             <storyboard event="activate" repeatAt="1">
@@ -49,7 +49,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <linearSmooth>true</linearSmooth>
-            <path>./_assets/arts/$system.webp</path>
+            <path>./_assets/arts/$system.png</path>
             <zIndex>40</zIndex>
         </image>
 
@@ -58,7 +58,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./_assets/overlay_gamelist.webp</path>
+            <path>./_assets/overlay_gamelist.png</path>
             <zIndex>41</zIndex>
         </image>
 

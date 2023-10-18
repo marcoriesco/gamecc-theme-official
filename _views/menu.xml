@@ -38,22 +38,22 @@
         </menuBackground>
 
         <menuIcons name="menuicons">
-            <iconKodi>./_assets/icons/Kodi.webp</iconKodi>
-            <iconSystem>./_assets/icons/System.webp</iconSystem>
-            <iconUpdates>./_assets/icons/Updates.webp</iconUpdates>
-            <iconGames>./_assets/icons/Games.webp</iconGames>
-            <iconControllers>./_assets/icons/Controllers.webp</iconControllers>
-            <iconUI>./_assets/icons/UI.webp</iconUI>
-            <iconSound>./_assets/icons/Sound.webp</iconSound>
-            <iconNetwork>./_assets/icons/Network.webp</iconNetwork>
-            <iconScraper>./_assets/icons/Scraper.webp</iconScraper>
-            <iconAdvanced>./_assets/icons/Advanced.webp</iconAdvanced>
-            <iconQuit>./_assets/icons/Quit.webp</iconQuit>
-            <iconRestart>./_assets/icons/Restart.webp</iconRestart>
-            <iconShutdown>./_assets/icons/Shutdown.webp</iconShutdown>
-            <iconFastShutdown>./_assets/icons/Fastshutdown.webp</iconFastShutdown>
-            <iconRetroachievements>./_assets/icons/Contest.webp</iconRetroachievements>
-            <iconEmuelec>./_assets/icons/Emuelec.webp</iconEmuelec>
+            <iconKodi>./_assets/icons/Kodi.png</iconKodi>
+            <iconSystem>./_assets/icons/System.png</iconSystem>
+            <iconUpdates>./_assets/icons/Updates.png</iconUpdates>
+            <iconGames>./_assets/icons/Games.png</iconGames>
+            <iconControllers>./_assets/icons/Controllers.png</iconControllers>
+            <iconUI>./_assets/icons/UI.png</iconUI>
+            <iconSound>./_assets/icons/Sound.png</iconSound>
+            <iconNetwork>./_assets/icons/Network.png</iconNetwork>
+            <iconScraper>./_assets/icons/Scraper.png</iconScraper>
+            <iconAdvanced>./_assets/icons/Advanced.png</iconAdvanced>
+            <iconQuit>./_assets/icons/Quit.png</iconQuit>
+            <iconRestart>./_assets/icons/Restart.png</iconRestart>
+            <iconShutdown>./_assets/icons/Shutdown.png</iconShutdown>
+            <iconFastShutdown>./_assets/icons/Fastshutdown.png</iconFastShutdown>
+            <iconRetroachievements>./_assets/icons/Contest.png</iconRetroachievements>
+            <iconEmuelec>./_assets/icons/Emuelec.png</iconEmuelec>
         </menuIcons>
         
         <helpsystem name="help">
