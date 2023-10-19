@@ -50,6 +50,7 @@
             <size>1 1</size>
             <linearSmooth>true</linearSmooth>
             <path>./_assets/arts/$system.png</path>
+            <path>./_assets/arts/$system.jpg</path>
             <zIndex>40</zIndex>
         </image>
 
