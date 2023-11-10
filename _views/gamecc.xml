@@ -91,6 +91,7 @@
             <text if="${system.name} == 'neogeocd'">NEO GEO</text>
             <text if="${system.name} == 'jaguar'">JAGUAR</text>
             <text if="${system.name} == 'jaguarcd'">JAGUAR CD</text>
+            <text if="${system.name} == 'nesbr'">NES PT-BR</text>
             <text if="${system.name} == 'n64'">NINTENDO 64</text>
             <text if="${system.name} == 'n64dd'">NINTENDO 64</text>
             <text if="${system.name} == 'virtualboy'">VIRTUAL BOY</text>
@@ -185,6 +186,8 @@
             <text if="${system.name} == 'jaguar'">ATARI</text>
             <text if="${system.name} == 'jaguarcd'">ATARI</text>
             <text if="${system.name} == 'megadrive'">SEGA</text>
+            <text if="${system.name} == 'nes'">NINTENDO</text>
+            <text if="${system.name} == 'nesbr'">NINTENDO</text>
             <text if="${system.name} == 'n64'"></text>
             <text if="${system.name} == 'n64dd'">DISK</text>
             <text if="${system.name} == 'virtualboy'">NINTENDO</text>
