@@ -1,0 +1,25 @@
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <customView name="gamecarousel">
+        
+        <!-- Video Game PrecustomView: HIDE -->
+        <video name="overlay, overlay2">
+            <zIndex>0</zIndex>
+        </video>
+
+        <!-- Name -->
+        <text name="md_name">
+            <color>0d723e</color>
+        </text>
+
+    </customView>
+
+    <customView name="screen">
+        <controllerActivity name="controllerActivity">
+            <pos>0.4315 0.930</pos>
+            <!-- <imagePath>./../xbox360/assets/gamepad.svg</imagePath> -->
+        </controllerActivity>
+    </customView>
+
+</theme>

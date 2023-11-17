@@ -46,7 +46,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./_assets/_parts/default.png</path>
-            <path>./$system/assets/wall.png</path>
+            <path>./_assets/gamelist/$system/assets/wall.png</path>
             <zIndex>1</zIndex>
         </image>
 
@@ -216,26 +216,25 @@
             <lineSpacing>1.16</lineSpacing>
 
             <storyboard event="activate">
-                <animation property="size" from="0.35 0" to="0.40 0.10" duration="600" mode="linear" />
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
             </storyboard>
         </text>
 
         <!-- Game Play Button -->
         <image name="md_game_play" extra="true">
             <origin>0 0</origin>
-            <pos>0.33 0.75</pos>
+            <pos>0.05 0.75</pos>
             <size>0.1195 0</size>
             <path>./../_assets/_parts/play_btn.png</path>
             <zIndex>17</zIndex>
 
-            <!-- <storyboard event="activate">
-                <animation property="pos" from="0.28 0.75" to="0.30 0.75" duration="600" mode="EaseIn" />
-                <animation property="opacity" begin="0" from="0" to="1" duration="600" mode="linear" />
-            </storyboard> -->
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
         </image>
         <text name="md_game_play_text" extra="true">
             <origin>0 0</origin>
-            <pos>0.33 0.75</pos>
+            <pos>0.05 0.75</pos>
             <size>0.1195 0.06</size>
             <text>JOGAR</text>
             <fontPath>./_assets/fonts/RobotoCondensed-Bold.ttf</fontPath>
@@ -246,15 +245,22 @@
             <alignment>right</alignment>
             <lineSpacing>1.16</lineSpacing>
             <padding>0 0 0.018 0</padding>
-
             <zIndex>17</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
         </text>
         <image name="md_game_play_B" extra="true">
             <origin>0 0</origin>
-            <pos>0.34 0.758</pos>
+            <pos>0.06 0.758</pos>
             <size>0.024 0</size>
             <path>./../_assets/iconsets/DEFAULT/b.png</path>
             <zIndex>17</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
         </image>
 
 

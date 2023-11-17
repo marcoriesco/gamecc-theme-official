@@ -1,0 +1,33 @@
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <customView name="gamecarousel">
+        
+        <!-- Video Game PrecustomView: HIDE -->
+        <video name="overlay, overlay2, background_default">
+            <zIndex>0</zIndex>
+        </video>
+
+        <!-- PS2 Interface -->
+        <video name="interface_default" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./assets/interface.mp4</path>
+            <zIndex>1</zIndex>
+        </video>
+
+        <!-- Name -->
+        <text name="md_name">
+            <color>ffffff</color>
+        </text>
+
+        <!-- Rating Classificação do Game -->
+        <rating name="md_rating">
+            <color>ffffff</color>
+            <unfilledColor>ffffff</unfilledColor>
+        </rating>
+
+    </customView>
+
+</theme>

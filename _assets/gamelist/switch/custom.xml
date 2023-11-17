@@ -1,0 +1,25 @@
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <include subset="Background" name="Default" displayName="Padrão"/>
+    <include subset="Background" name="Wallpaper2" displayName="Wallpaper #2"/>
+    <include subset="Background" name="Wallpaper3" displayName="Wallpaper #3"/>
+    <include subset="Background" name="Wallpaper4" displayName="Wallpaper #4"/>
+
+    <customView name="gamecarousel">
+        <!-- HIDE -->
+        <video name="overlay2">
+            <zIndex>0</zIndex>
+        </video>
+
+        <!-- Background Default -->
+        <image name="background_default" extra="true">
+            <path ifSubset="Background:Default">./assets/wall.webp</path>
+            <path ifSubset="Background:Wallpaper2">./assets/wall2.webp</path>
+            <path ifSubset="Background:Wallpaper3">./assets/wall3.webp</path>
+            <path ifSubset="Background:Wallpaper4">./assets/wall4.webp</path>
+        </image>
+
+    </customView>
+
+</theme>
