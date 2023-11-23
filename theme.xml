@@ -1,6 +1,6 @@
 <!-- 
     GAMECC theme created by 'Game Clandestino'
-    1.11, Setember 2022 For Batocera/Retrobat
+    2.01, Setember 2022 For Batocera/Retrobat
     -
     https://gameclandestino.org
     https://youtube.com/@gameclandestino
@@ -10,7 +10,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 
-<theme defaultView="grid">
+<theme defaultView="gamecarousel">
     <formatVersion>7</formatVersion>
 
     <!-- ICONSETS -->
@@ -48,10 +48,12 @@
         <collectionColor>${pinkColor}</collectionColor>
     </variables>
 
+
     <include name="system">./_views/gamecc.xml</include>
     <include name="menu">./_views/menu.xml</include>
-    
-    <include name="grid">./_views/gamecc_gamelist.xml</include>
-    <include name="gamecarousel">./_views/gamecc_gamelist_alt.xml</include>
+    <include name="gamecarousel">./_views/gamecc-gamelist.xml</include>
+
+    <!-- Specific layout for systems -->
+    <include>./${system.theme}/custom.xml</include>
 
 </theme>
