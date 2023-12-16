@@ -72,7 +72,7 @@
             <text>${system.name}</text>
             <text if="${system.name} == 'all'">OS JOGOS</text>
             <text if="${system.name} == 'favorites'">FAVORITOS</text>
-            
+
             <text if="${system.name} == 'hbmame'">ARCADE HACKS</text>
             <text if="${system.name} == 'daphne'">LASERDISC</text>
             <text if="${system.name} == 'model2'">MODEL 2</text>
@@ -82,10 +82,15 @@
             <text if="${system.name} == 'neogeo'">NEO GEO</text>
             <text if="${system.name} == 'neogeo64'">NEO GEO 64</text>
             <text if="${system.name} == 'segastv'">SEGA ST-V</text>
+            <text if="${system.name} == 'namco2x6'">SYSTEM 2X6</text>
+            <text if="${system.name} == 'namco357'">SYSTEM 357</text>
 
             <text if="${system.name} == 'windows'">PC GAMER</text>
             <text if="${system.name} == 'pinballfx3'">PINBALL FX3</text>
 
+            <text if="${system.name} == 'atari2600'">ATARI 2600</text>
+            <text if="${system.name} == 'atari5200'">ATARI 5200</text>
+            <text if="${system.name} == 'atari7800'">ATARI 7800</text>
             <text if="${system.name} == 'dreamcast'">DREAMCAST</text>
             <text if="${system.name} == 'neogeoaes'">NEO GEO</text>
             <text if="${system.name} == 'neogeocd'">NEO GEO</text>
@@ -109,6 +114,8 @@
             <text if="${system.name} == 'megadrive'">MEGADRIVE</text>
             <text if="${system.name} == 'megadrive-msu'">MEGADRIVE</text>
             <text if="${system.name} == 'switch'">SWITCH</text>
+            <text if="${system.name} == 'pcengine'">PC ENGINE</text>
+            <text if="${system.name} == 'pcenginecd'">PC ENGINE CD</text>
 
             <text if="${system.name} == 'scummvm'">SCUMM VM</text>
 
@@ -171,12 +178,17 @@
             <text if="${system.name} == 'teknoparrot'"></text>
             <text if="${system.name} == 'triforce'">SEGA</text>
             <text if="${system.name} == 'zinc'">SONY</text>
+            <text if="${system.name} == 'namco2x6'">NAMCO</text>
+            <text if="${system.name} == 'namco357'">NAMCO</text>
 
             <text if="${system.name} == 'dos'">MICROSOFT</text>
             <text if="${system.name} == 'windows'">WINDOWS</text>
             <text if="${system.name} == 'popcap'">GAMES</text>
             <text if="${system.name} == 'pinballfx3'"></text>
 
+            <text if="${system.name} == 'atari2600'"></text>
+            <text if="${system.name} == 'atari5200'"></text>
+            <text if="${system.name} == 'atari7800'"></text>
             <text if="${system.name} == '3do'"></text>
             <text if="${system.name} == 'dreamcast'">SEGA</text>
             <text if="${system.name} == 'mastersystem'">SEGA</text>
@@ -206,6 +218,8 @@
             <text if="${system.name} == 'megadrive'">SEGA</text>
             <text if="${system.name} == 'megadrive-msu'">MSU</text>
             <text if="${system.name} == 'switch'">NINTENDO</text>
+            <text if="${system.name} == 'pcengine'">NEC</text>
+            <text if="${system.name} == 'pcenginecd'">NEC</text>
 
             <text if="${system.name} == 'scummvm'">VIRTUAL MACHINE</text>
             <text if="${system.name} == 'openbor'"></text>
@@ -259,7 +273,7 @@
             <text if="${system.name} == 'gamecc'">{binding:total} sistemas</text>
             <fontPath>./_assets/fonts/LEMONMILK-Medium.otf</fontPath>
             <fontSize>0.036</fontSize>
-            
+
             <color>${pinkColor}</color>
             <color if="${system.name} == 'gamecc'">${gameccColor}</color>
             <color if="${system.hardwareType} == 'arcade'">${arcadeColor}</color>
@@ -269,7 +283,7 @@
             <color if="${system.hardwareType} == 'portable'">${portableColor}</color>
             <color if="${system.name} == 'all'">${allColor}</color>
             <color if="${system.hardwareType} == 'custom collection'">${collectionColor}</color>
-            
+
             <alignment>center</alignment>
             <systemInfoDelay>0</systemInfoDelay>
             <zIndex>95</zIndex>

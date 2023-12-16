@@ -29,6 +29,7 @@
             <lineSpacing>1.0</lineSpacing>
             <fontPath>./_assets/fonts/LEMONMILK-Bold.otf</fontPath>
             <fontSize>0.040</fontSize>
+            <fontSize if="${system.name} == 'hbmame'">0.020</fontSize>
         </text>
 
         <!-- Overlay background -->
@@ -113,9 +114,8 @@
             <origin>1 0.5</origin>
             <pos>0.98 0.058</pos>
             <size>0.15 </size>
-            <color>FFFFFF60</color>
-            <scale>0.7</scale>
-            <path>./_assets/logos/$system.png</path>
+            <scale>1</scale>
+            <path>./_assets/logos/svg/$system.svg</path>
             <zIndex>99</zIndex>
         </image>
 
@@ -270,7 +270,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./../_assets/videos/smoke.mp4</path>
-            <opacity>0.1</opacity>
+            <opacity>0.15</opacity>
             <zIndex>16</zIndex>
         </video>
 
