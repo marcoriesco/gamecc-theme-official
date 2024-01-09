@@ -75,6 +75,7 @@
 
             <text if="${system.name} == 'hbmame'">ARCADE HACKS</text>
             <text if="${system.name} == 'daphne'">LASERDISC</text>
+            <text if="${system.name} == 'daphne-singe'">LASERDISC</text>
             <text if="${system.name} == 'model2'">MODEL 2</text>
             <text if="${system.name} == 'model3'">MODEL 3</text>
             <text if="${system.name} == 'naomi'">NAOMI</text>
@@ -167,6 +168,7 @@
             <text if="${system.name} == 'chihiro'">SEGA</text>
             <text if="${system.name} == 'hbmame'">MAME HOMEBREW</text>
             <text if="${system.name} == 'daphne'">DAPHNE</text>
+            <text if="${system.name} == 'daphne-singe'">DAPHNE SINGE</text>
             <text if="${system.name} == 'model2'">SEGA</text>
             <text if="${system.name} == 'model3'">SEGA</text>
             <text if="${system.name} == 'naomi'">SEGA</text>

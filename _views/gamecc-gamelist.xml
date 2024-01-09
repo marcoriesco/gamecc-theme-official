@@ -54,7 +54,7 @@
         <!-- Fanart background -->
         <image name="md_fanart">
             <origin>0 0</origin>
-            <pos>0 0</pos>
+            <pos>0.025 0</pos>
             <size>0.7 0.7</size>
             <zIndex>14</zIndex>
 
@@ -67,14 +67,28 @@
         <video ifSubset="video_gamelist:Ativo" name="md_video">
             <origin>0 0</origin>
             <pos>0 0</pos>
+            <pos if="${system.name} == 'arcade'">0.10 0.21</pos>
             <size>0.7 0.7</size>
+            <size if="${system.name} == 'arcade'">0.254 0.335</size>
             <delay>3</delay>
-            <zIndex>15</zIndex>
+            <delay if="${system.name} == 'arcade'">2.5</delay>
+            <zIndex>16</zIndex>
 
             <storyboard event="activate">
                 <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
             </storyboard>
         </video>
+
+        <image if="${system.name} == 'arcade'" name="md_boxback">
+            <origin>0 0</origin>
+            <pos>0.10 0.21</pos>
+            <size>0.254 0.335</size>
+            <zIndex>15</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </image>
 
         <!-- System Icon -->
         <image name="system_controller_icon" extra="true">
@@ -225,7 +239,7 @@
             <origin>0 0</origin>
             <pos>0.05 0.75</pos>
             <size>0.1195 0</size>
-            <path>./../_assets/_parts/play_btn.png</path>
+            <path>./../_assets/_parts/play_btn.svg</path>
             <zIndex>17</zIndex>
 
             <storyboard event="activate">

@@ -2,20 +2,20 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <view name="system">        
-        
+    <view name="system">
+
         <!-- GAMECC -->
         <image name="gamecc_logo" extra="true">
             <origin>0 0</origin>
             <pos>0.019 0.035</pos>
             <size>0.025 0</size>
-            <path>./../_assets/_parts/gamecc_color.png</path>
+            <path>./../_assets/_parts/gamecc_color.svg</path>
             <color if="${system.name} == 'gamecc'">000000</color>
             <opacity>0.6</opacity>
             <opacity if="${system.name} == 'gamecc'">1</opacity>
-            <zIndex>100</zIndex>   
+            <zIndex>100</zIndex>
         </image>
-        
+
 
         <!-- Indicadores de sistema hardware -->
         <text name="gamecc_top_gamecc, gamecc_top_arcade, gamecc_top_computer, gamecc_top_console, gamecc_top_port, gamecc_top_portable, gamecc_top_all, gamecc_top_collection" extra="true">
@@ -27,7 +27,7 @@
             <alignment>center</alignment>
             <zIndex>99</zIndex>
         </text>
-        
+
         <text name="gamecc_top_indicator_line" extra="true">
             <origin>0 0</origin>
 
@@ -146,7 +146,7 @@
             <origin>1 0</origin>
             <pos>0.965 0.042</pos>
             <size>0.1 0</size>
-            <path>./../_assets/_parts/gamecc_logo.png</path>
+            <path>./../_assets/_parts/gamecc_logo.svg</path>
             <color>FFFFFF</color>
             <opacity>0.3</opacity>
             <zIndex>98</zIndex>
