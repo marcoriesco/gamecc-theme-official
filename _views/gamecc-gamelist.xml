@@ -38,7 +38,8 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./_assets/_parts/overlay_gamelist_alt.png</path>
-            <zIndex>16</zIndex>
+            <path if="${system.name} == 'arcade'">./_assets/_parts/overlay_gamelist_arcade.png</path>
+            <zIndex>17</zIndex>
         </image>
 
         <!-- Background Default -->
@@ -54,8 +55,10 @@
         <!-- Fanart background -->
         <image name="md_fanart">
             <origin>0 0</origin>
-            <pos>0.025 0</pos>
+            <pos>0 0</pos>
+            <pos if="${system.name} == 'arcade'">0.32 0</pos>
             <size>0.7 0.7</size>
+            <size if="${system.name} == 'arcade'">0.7 0.7</size>
             <zIndex>14</zIndex>
 
             <storyboard event="activate">
@@ -67,7 +70,7 @@
         <video ifSubset="video_gamelist:Ativo" name="md_video">
             <origin>0 0</origin>
             <pos>0 0</pos>
-            <pos if="${system.name} == 'arcade'">0.10 0.21</pos>
+            <pos if="${system.name} == 'arcade'">0.075 0.21</pos>
             <size>0.7 0.7</size>
             <size if="${system.name} == 'arcade'">0.254 0.335</size>
             <delay>3</delay>
@@ -81,7 +84,14 @@
 
         <image if="${system.name} == 'arcade'" name="md_boxback">
             <origin>0 0</origin>
-            <pos>0.10 0.21</pos>
+            <pos>0 0</pos>
+            <size>0.7 0.7</size>
+            <zIndex>14</zIndex>
+        </image>
+
+        <image if="${system.name} == 'arcade'" name="md_titleshot">
+            <origin>0 0</origin>
+            <pos>0.075 0.21</pos>
             <size>0.254 0.335</size>
             <zIndex>15</zIndex>
 
@@ -277,7 +287,6 @@
             </storyboard>
         </image>
 
-
         <!-- VIDEO SMOKE -->
         <video name="md_video_smoke" extra="true">
             <origin>0 0</origin>
@@ -285,7 +294,7 @@
             <size>1 1</size>
             <path>./../_assets/videos/smoke.mp4</path>
             <opacity>0.15</opacity>
-            <zIndex>16</zIndex>
+            <zIndex>17</zIndex>
         </video>
 
     </view>
