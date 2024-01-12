@@ -58,7 +58,6 @@
             <pos>0 0</pos>
             <pos if="${system.name} == 'arcade'">0.32 0</pos>
             <size>0.7 0.7</size>
-            <size if="${system.name} == 'arcade'">0.7 0.7</size>
             <zIndex>14</zIndex>
 
             <storyboard event="activate">
